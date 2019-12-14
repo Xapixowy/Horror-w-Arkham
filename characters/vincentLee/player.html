@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Vincent Lee (Zwykły gracz) - Horror w Arkham</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./../../styles.css">
+</head>
+
+<body onload="valueCheck()">
+   <button id="navClick">
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+   </button>
+   <button id="loreClick">
+      <i class="fas fa-question"></i>
+   </button>
+   <nav>
+      <ul>
+         <li><a href="./../../">Horror w Arkham</a></li>
+         <li><a class="thisSite" href="./../../characters.html">Postacie</a></li>
+      </ul>
+   </nav>
+   <aside>
+      <h1>Co wydarzyło się wcześniej:</h1>
+      <p>Vincent, absolwent wydziału Medycyny Uniwersytetu Yale, przeprowadził się tu niedawno z Bostonu, aby pracować w
+         Szpitalu Św. Marii. Od czasu przybycia do Arkham widział zbyt wiele straszliwych i niewyjaśnionych zgonów -
+         staruszek rozerwany na strzępy przez niezidentyfikowane dzikie zwierzęta, zdrowy, młody mężczyzna, którego
+         serce eksplodowało, i tak wiele innych. Ich twarze nawiedzają jego sny, zwłaszcza przerażone oblicze tamtego
+         młodego mężczyzny. Po tym wszystkim co widział, trudno się dziwić, że Vincent podejrzewa, że w tym spokojnym
+         miasteczku w Massachusetts dzieje się coś straszliwego.</p>
+      <p>Dziś wieczorem Dr Lee podjął decyzję. Pozna tajemnice Arkham i położy kres dziwacznym zgonom. Jest zdecydowany
+         dotrwać do końca, nawet gdyby w wyniku swojego śledztwa to on miał się stać zagadką dla następnego lekarza,
+         który przybędzie do Arkham.</p>
+   </aside>
+   <main id="player">
+      <h5>Doktor</h5>
+      <img src="./cover-small.jpeg" alt="Zdjęcie okładki gry">
+      <h1>Vincent Lee</h1>
+      <span class="lineAcross"></span>
+      <table>
+         <tr>
+            <th>Pole startowe:</th>
+            <td>Szpital Św. Marii</td>
+         </tr>
+         <tr>
+            <th>Stały ekwipunek:</th>
+            <td>
+               <ul>
+                  <li>9$,</li>
+                  <li>1 żeton Wskazówki</li>
+               </ul>
+            </td>
+         </tr>
+         <tr>
+            <th>Losowy ekwipunek:</th>
+            <td>
+               <ul>
+                  <li>2 Przedmioty powszechne,</li>
+                  <li>2 Zaklęcia,</li>
+                  <li>1 Umiejętność</li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+      <span class="lineAcross"></span>
+      <h4>LEKARZ</h4>
+      <p><strong>Utrzymanie: </strong>Dr Lee może przywrócić 1 punkt Wytrzymałości sobie albo innej postaci na tym samym
+         polu. Dr Lee nie może podnieść Wytrzymałości postaci ponad jej maksymalny poziom.</p>
+      <span class="lineAcross"></span>
+      <h4>POCZYTALNOŚĆ</h4>
+      <div class="stats sanity">
+         <div class="minus">
+            <span></span>
+         </div>
+         <div class="value">5</div>
+         <div class="plus">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <h4>WYTRZYMAŁOŚĆ</h4>
+      <div class="stats endurance">
+         <div class="minus">
+            <span></span>
+         </div>
+         <div class="value">5</div>
+         <div class="plus">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>SZYBKOŚĆ</p>
+         <div class="values">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>5</p>
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+         </div>
+         <p>SKRADANIE SIĘ</p>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>WALECZNOŚĆ</p>
+         <div class="values">
+            <p>0</p>
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+         </div>
+         <p>WOLA</p>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>WIEDZA</p>
+         <div class="values">
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+         </div>
+         <p>SZCZĘŚCIE</p>
+      </div>
+      <span class="lineAcross"></span>
+      <p>Skupienie: <span>2</span></p>
+   </main>
+   <footer>
+      2019 &copy Jakub Chodziński
+   </footer>
+   <script src="./../../script.js"></script>
+   <script src="./../../characters.js"></script>
+</body>
+
+</html>

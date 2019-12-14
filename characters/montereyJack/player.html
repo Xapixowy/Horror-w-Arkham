@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Monterey Jack (Zwykły gracz) - Horror w Arkham</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./../../styles.css">
+</head>
+
+<body onload="valueCheck()">
+   <button id="navClick">
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+   </button>
+   <button id="loreClick">
+      <i class="fas fa-question"></i>
+   </button>
+   <nav>
+      <ul>
+         <li><a href="./../../">Horror w Arkham</a></li>
+         <li><a class="thisSite" href="./../../characters.html">Postacie</a></li>
+      </ul>
+   </nav>
+   <aside>
+      <h1>Co wydarzyło się wcześniej:</h1>
+      <p>Monterey już od lat jest podróżującym po świecie awanturnikiem i poszukiwaczem skarbów. Idąc w ślady ojca,
+         zawsze stara się zabezpieczyć wartość naukową swoich znalezisk. Ostatnio podążył do Arkham tropem dziwacznego,
+         pradawnego posążka. Kiedy przybył do miasteczka okazało się, że mężczyzna, który miał mu go sprzedać, został
+         zamknięty w przytułku. Monterey miał już zamiar dać sobie spokój i ze zrezygnowaniem wrócić do domu, kiedy obok
+         niego przepchnęła się jakaś zakapturzona postać.</p>
+      <p>Przez moment Monterey dostrzegł blask srebrnego wisiorka z symbolem, którego nigdy by nie zapomniał. Taki sam
+         symbol wyryto na czole jego zamordowanego ojca i to on nawiedzał przez lata jego sny. Monterey pognał za
+         tajemniczą postacią, ale kiedy skręcił za róg zdał sobie sprawę, że ją zgubił.</p>
+      <p>Monterey wie jednak, że gdzieś w Arkham znajduje się wyjaśnienie tajemnicy śmierci jego ojca. Nie opuści
+         miasteczka, póki go nie pozna.</p>
+   </aside>
+   <main id="player">
+      <h5>Archeolog</h5>
+      <img src="./cover-small.jpeg" alt="Zdjęcie okładki gry">
+      <h1>Monterey Jack</h1>
+      <span class="lineAcross"></span>
+      <table>
+         <tr>
+            <th>Pole startowe:</th>
+            <td>Antykwariat</td>
+         </tr>
+         <tr>
+            <th>Stały ekwipunek:</th>
+            <td>
+               <ul>
+                  <li>7$,</li>
+                  <li>1 żeton Wskazówki,</li>
+                  <li>2 Przedmioty powszechne (Bicz, Rewolwer .38)</li>
+               </ul>
+            </td>
+         </tr>
+         <tr>
+            <th>Losowy ekwipunek:</th>
+            <td>
+               <ul>
+                  <li>2 Przedmioty unikatowe,</li>
+                  <li>1 Umiejętność</li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+      <span class="lineAcross"></span>
+      <h4>ARCHEOLOGIA</h4>
+      <p><strong>Dowolna faza: </strong>Za każdym razem, kiedy Monterey losuje jedną lub więcej kart z talii
+         <strong>Przedmiotów unikatowych</strong>, dobiera o jedną kartę więcej, a następnie odrzuca jedną z nich.</p>
+      <span class="lineAcross"></span>
+      <h4>POCZYTALNOŚĆ</h4>
+      <div class="stats sanity">
+         <div class="minus">
+            <span></span>
+         </div>
+         <div class="value">3</div>
+         <div class="plus">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <h4>WYTRZYMAŁOŚĆ</h4>
+      <div class="stats endurance">
+         <div class="minus">
+            <span></span>
+         </div>
+         <div class="value">7</div>
+         <div class="plus">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>SZYBKOŚĆ</p>
+         <div class="values">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+            <p>0</p>
+         </div>
+         <p>SKRADANIE SIĘ</p>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>WALECZNOŚĆ</p>
+         <div class="values">
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+            <p>0</p>
+         </div>
+         <p>WOLA</p>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>WIEDZA</p>
+         <div class="values">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>5</p>
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+         </div>
+         <p>SZCZĘŚCIE</p>
+      </div>
+      <span class="lineAcross"></span>
+      <p>Skupienie: <span>2</span></p>
+   </main>
+   <footer>
+      2019 &copy Jakub Chodziński
+   </footer>
+   <script src="./../../script.js"></script>
+   <script src="./../../characters.js"></script>
+</body>
+
+</html>

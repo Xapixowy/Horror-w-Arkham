@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Wilson Richards (Zwykły gracz) - Horror w Arkham</title>
+   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+      rel="stylesheet">
+   <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./../../styles.css">
+</head>
+
+<body onload="valueCheck()">
+   <button id="navClick">
+      <div class="burger"></div>
+      <div class="burger"></div>
+      <div class="burger"></div>
+   </button>
+   <button id="loreClick">
+      <i class="fas fa-question"></i>
+   </button>
+   <nav>
+      <ul>
+         <li><a href="./../../">Horror w Arkham</a></li>
+         <li><a class="thisSite" href="./../../characters.html">Postacie</a></li>
+      </ul>
+   </nav>
+   <aside>
+      <h1>Co wydarzyło się wcześniej:</h1>
+      <p>Na trasie widzisz mnóstwo różnych rzeczy, a Wilson podróżuje od lat. Włóczy się od miasta do miasta, zarabia
+         chwytając się dorywczych prac - ale nigdy nie był świadkiem wydarzeń, do których dochodzi w Arkham.</p>
+      <p>Coś tu jest nie tak. Samotnik i włóczęga rozwija w sobie szósty zmysł, umie oceniać ludzi i miejsca. Teraz
+         szósty zmysł radzi Wilsonowi uciekać z miasta. Szybko. Ale z jakiegoś powodu ciekawość jest silniejsza od
+         strachu. Ma przeczucie, że robota, którą ma do wykonania w Arkham, może się okazać odrobinę poważniejsza od
+         naprawy schodów albo malowania ogrodzenia.</p>
+   </aside>
+   <main id="player">
+      <h5>Złota rączka</h5>
+      <img src="./cover-small.jpeg" alt="Zdjęcie okładki gry">
+      <h1>Wilson Richards</h1>
+      <span class="lineAcross"></span>
+      <table>
+         <tr>
+            <th>Pole startowe:</th>
+            <td>Dworzec</td>
+         </tr>
+         <tr>
+            <th>Stały ekwipunek:</th>
+            <td>
+               <ul>
+                  <li>4$,</li>
+                  <li>3 Przedmioty powszechne (Motocykl, Dubeltówka, Whiskey)</li>
+               </ul>
+            </td>
+         </tr>
+         <tr>
+            <th>Losowy ekwipunek:</th>
+            <td>
+               <ul>
+                  <li>2 Przedmioty unikatowe,</li>
+                  <li>1 Umiejętność</li>
+               </ul>
+            </td>
+         </tr>
+      </table>
+      <span class="lineAcross"></span>
+      <h4>WSZECHSTRONNY</h4>
+      <p><strong>Utrzymanie: </strong>Skupienie Wilsona jest nieograniczone.</p>
+      <h4>PRACE DOTYWCZE</h4>
+      <p><strong>Spotkania w Arkham: </strong>Zamiast odbywać spotkanie na danym obszarze (ale nie na ulicach lub w
+         Innym Świecie), Wilson może otrzymać 1$.</p>
+      <span class="lineAcross"></span>
+      <h4>POCZYTALNOŚĆ</h4>
+      <div class="stats sanity">
+         <div class="minus">
+            <span></span>
+         </div>
+         <div class="value">5</div>
+         <div class="plus">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <h4>WYTRZYMAŁOŚĆ</h4>
+      <div class="stats endurance">
+         <div class="minus">
+            <span></span>
+         </div>
+         <div class="value">5</div>
+         <div class="plus">
+            <span></span>
+            <span></span>
+         </div>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>SZYBKOŚĆ</p>
+         <div class="values">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>5</p>
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+         </div>
+         <p>SKRADANIE SIĘ</p>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>WALECZNOŚĆ</p>
+         <div class="values">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+            <p>0</p>
+         </div>
+         <p>WOLA</p>
+      </div>
+      <span class="lineAcross"></span>
+      <div class="slider">
+         <p>WIEDZA</p>
+         <div class="values">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+         </div>
+         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
+         <div class="values">
+            <p>4</p>
+            <p>3</p>
+            <p>2</p>
+            <p>1</p>
+         </div>
+         <p>SZCZĘŚCIE</p>
+      </div>
+      <span class="lineAcross"></span>
+      <p>Skupienie: <span>&#8734</span></p>
+   </main>
+   <footer>
+      2019 &copy Jakub Chodziński
+   </footer>
+   <script src="./../../script.js"></script>
+   <script src="./../../characters.js"></script>
+</body>
+
+</html>

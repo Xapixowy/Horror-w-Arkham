@@ -5,24 +5,61 @@ const navBurgerLine3 = document.querySelector('button#navClick>div.burger:nth-of
 const nav = document.querySelector('nav');
 
 function navBurgerToggle() {
-   navButton.classList.toggle('buttonClicked');
-   navBurgerLine1.classList.toggle('burgerClicked1');
-   navBurgerLine2.classList.toggle('burgerClicked2');
-   navBurgerLine3.classList.toggle('burgerClicked3');
-   nav.classList.toggle('navClicked');
+   if (navButton.classList.contains('clicked') == false) {
+      navButton.style.backgroundColor = '#808080';
+      navBurgerLine1.style.transform = 'translateY(15px) rotate(45deg)';
+      navBurgerLine2.style.transform = 'translateX(-42px)';
+      navBurgerLine3.style.transform = 'translateY(-15px) rotate(-45deg)';
+      nav.style.transform = 'translateX(0%)';
+      if (loreButton) {
+         loreButton.style.transform = 'translateX(150%)';
+      }
+      navButton.classList.add('clicked');
+   } else {
+      navButton.style.backgroundColor = '#C4C4C4';
+      navBurgerLine1.style.transform = 'initial';
+      navBurgerLine2.style.transform = 'initial';
+      navBurgerLine3.style.transform = 'initial';
+      nav.style.transform = 'translateX(-100%)';
+      if (loreButton) {
+         loreButton.style.transform = 'initial';
+      }
+      navButton.classList.remove('clicked');
+   }
 }
-
 navButton.addEventListener('click', navBurgerToggle);
+
+const loreButton = document.querySelector('button#loreClick');
+const loreQuestion = document.querySelector('button#loreClick>i');
+const aside = document.querySelector('aside');
+
+function loreToggle() {
+   if (loreButton.classList.contains('clicked') == false) {
+      loreButton.style.backgroundColor = '#808080';
+      loreQuestion.style.transform = 'rotate(180deg)';
+      aside.style.transform = 'translateX(0%)';
+      navButton.style.transform = 'translateX(-150%)';
+      loreButton.classList.add('clicked');
+   } else {
+      loreButton.style.backgroundColor = '#C4C4C4';
+      loreQuestion.style.transform = 'none';
+      aside.style.transform = 'translateX(100%)';
+      navButton.style.transform = 'initial';
+      loreButton.classList.remove('clicked');
+   }
+}
+if (loreButton) {
+   loreButton.addEventListener('click', loreToggle);
+}
 
 const randomCharacterButton = document.querySelector('button#randomCharacter');
 
 function randomCharacter() {
    let characters = new Array();
-   // Podstawowe
    characters[0] = "./characters/amandaSharpe/menu.html"
    characters[1] = "./characters/bobJenkins/menu.html"
    characters[2] = "./characters/carolynFern/menu.html"
-   characters[3] = "./characters/darrellSimons/menu.html"
+   characters[3] = "./characters/darrellSimmons/menu.html"
    characters[4] = "./characters/dexterDrake/menu.html"
    characters[5] = "./characters/gloriaGoldberg/menu.html"
    characters[6] = "./characters/harveyWalters/menu.html"
@@ -44,7 +81,6 @@ function randomCharacter() {
    characters[21] = "./characters/markHarrigan/menu.html"
    characters[22] = "./characters/ritaYoung/menu.html"
    characters[23] = "./characters/wilsonRichards/menu.html"
-
    let random = Math.round(Math.random() * (characters.length - 1));
    window.location = characters[random];
 }

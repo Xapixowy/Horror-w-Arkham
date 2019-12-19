@@ -1,5 +1,3 @@
-// Sanity
-
 const sanityMinus = document.querySelector('div.sanity>div.minus');
 const sanityPlus = document.querySelector('div.sanity>div.plus');
 const sanityValue = document.querySelector('div.sanity>div.value');
@@ -22,6 +20,7 @@ function sanityValueMinus() {
       sanityValue.style.fontWeight = "700";
    }
 }
+sanityMinus.addEventListener('click', sanityValueMinus);
 
 function sanityValuePlus() {
    let value = parseInt(sanityValue.textContent);
@@ -41,11 +40,7 @@ function sanityValuePlus() {
       sanityValue.style.fontWeight = "700";
    }
 }
-
-sanityMinus.addEventListener('click', sanityValueMinus);
 sanityPlus.addEventListener('click', sanityValuePlus);
-
-// Endurance
 
 const enduranceMinus = document.querySelector('div.endurance>div.minus');
 const endurancePlus = document.querySelector('div.endurance>div.plus');
@@ -69,6 +64,7 @@ function enduranceValueMinus() {
       enduranceValue.style.fontWeight = "700";
    }
 }
+enduranceMinus.addEventListener('click', enduranceValueMinus);
 
 function enduranceValuePlus() {
    let value = parseInt(enduranceValue.textContent);
@@ -88,11 +84,7 @@ function enduranceValuePlus() {
       enduranceValue.style.fontWeight = "700";
    }
 }
-
-enduranceMinus.addEventListener('click', enduranceValueMinus);
 endurancePlus.addEventListener('click', enduranceValuePlus);
-
-// Asign max sanity and endurance to variable
 
 let sanityValueMax;
 let enduranceValueMax;
@@ -101,17 +93,3 @@ function valueCheck() {
    sanityValueMax = parseInt(sanityValue.textContent);
    enduranceValueMax = parseInt(enduranceValue.textContent);
 }
-
-// Lore aside
-
-const loreButton = document.querySelector('button#loreClick');
-const loreQuestion = document.querySelector('button#loreClick>i');
-const loreAside = document.querySelector('aside');
-
-function loreToggle() {
-   loreButton.classList.toggle('buttonClicked');
-   loreQuestion.classList.toggle('questionClicked');
-   loreAside.classList.toggle('asideClicked');
-}
-
-loreButton.addEventListener('click', loreToggle);

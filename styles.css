@@ -24,12 +24,6 @@ button {
    background-color: #C4C4C4;
 }
 
-.buttonClicked {
-   background-color: #808080;
-}
-
-/* Nav button styles */
-
 button#navClick {
    z-index: 3;
    top: 10px;
@@ -61,19 +55,18 @@ button#navClick>div.burger:nth-of-type(3) {
    left: 8px;
 }
 
-.burgerClicked1 {
-   transform: translateY(15px) rotate(45deg);
+button#randomCharacter {
+   top: 10px;
+   right: 10px;
+   width: 50px;
+   height: 50px;
+   background-color: #FFC800;
+   font-size: 30px;
 }
 
-.burgerClicked2 {
-   transform: translateX(-42px);
+button#randomCharacter i {
+   animation: wingle 1s ease-in-out infinite both;
 }
-
-.burgerClicked3 {
-   transform: translateY(-15px) rotate(-45deg);
-}
-
-/* Lore button styles */
 
 button#loreClick {
    top: 10px;
@@ -97,15 +90,6 @@ nav {
    transform: translateX(-100%);
    transition: .5s;
    z-index: 2;
-}
-
-.questionClicked {
-   transform: rotate(180deg);
-}
-
-.asideClicked,
-.navClicked {
-   transform: translateX(0%);
 }
 
 nav ul {
@@ -137,6 +121,36 @@ nav ul li a.thisSite {
    font-weight: 700;
 }
 
+aside {
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 100px 15px;
+   background-color: #C4C4C4;
+   width: 100vw;
+   height: 100vh;
+   transform: translateX(100%);
+   transition: .5s;
+   z-index: 1;
+   overflow: scroll;
+}
+
+aside h1 {
+   color: #000;
+   text-align: center;
+}
+
+aside p {
+   font-weight: 300;
+   color: black;
+   text-align: justify;
+   margin: 10px 0;
+}
+
+aside p::first-letter {
+   font-weight: 400;
+}
+
 main {
    padding: 70px 20px 0 20px;
    width: 100vw;
@@ -146,6 +160,17 @@ main {
    flex-direction: column;
    justify-content: space-between;
    align-items: center;
+}
+
+main img {
+   width: 250px;
+   border-radius: 50px;
+   border: 1px solid #fff;
+}
+
+main p {
+   text-align: center;
+   margin: 15px 0;
 }
 
 main#selectGameRole {
@@ -160,113 +185,6 @@ main#selectGameRole h1 {
    margin-bottom: 20px;
 }
 
-main img {
-   width: 250px;
-   border-radius: 50px;
-   border: 1px solid #fff;
-}
-
-main p {
-   text-align: center;
-   margin: 15px 0;
-}
-
-.lineAcross {
-   border-bottom: 1px solid #fff;
-   display: inline-block;
-   width: 100%;
-}
-
-div.characters {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: space-around;
-}
-
-button#randomCharacter {
-   top: 10px;
-   right: 10px;
-   width: 50px;
-   height: 50px;
-   background-color: #FFC800;
-   font-size: 30px;
-}
-
-button#randomCharacter i {
-   animation: wingle 1s ease-in-out infinite both;
-}
-
-div.characters h1 {
-   flex-basis: 100%;
-   text-align: center;
-}
-
-div.character {
-   width: 30vw;
-   height: 30vw;
-   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
-   background-size: cover;
-   border: 1px solid #fff;
-   color: #000;
-   margin: 10px;
-}
-
-div.character a {
-   display: block;
-   width: 100%;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   text-decoration: none;
-   color: #000;
-}
-
-div.characters:nth-of-type(2)>div.character {
-   border-color: #FFC800;
-}
-
-div.selectGameRole {
-   border: 1px solid #fff;
-   width: 50vw;
-   height: 50vw;
-   background-color: rgba(255, 255, 255, 0.5);
-}
-
-div.selectGameRole a {
-   display: block;
-   width: 100%;
-   height: 100%;
-   text-decoration: none;
-   color: #000;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-div.selectGameRole:nth-of-type(1) {
-   background-color: #FFC800;
-}
-
-div.selectGameRole i {
-   font-size: 50px;
-}
-
-footer {
-   width: 100vw;
-   height: 50px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-weight: 300;
-   font-size: 10px;
-   background-color: #222222;
-}
-
-/*  Characters styles (player / master)  */
 main#player {
    display: block;
 }
@@ -308,6 +226,93 @@ main#player table td {
 
 main#player table ul {
    list-style-type: none;
+}
+
+main#player p:last-child {
+   text-align: center;
+}
+
+main#player p:last-child>span {
+   color: #FFC800;
+}
+
+footer {
+   width: 100vw;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 300;
+   font-size: 10px;
+   background-color: #222222;
+}
+
+.lineAcross {
+   border-bottom: 1px solid #fff;
+   display: inline-block;
+   width: 100%;
+}
+
+.characters {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.characters h1 {
+   flex-basis: 100%;
+   text-align: center;
+}
+
+.character {
+   width: 20vh;
+   height: 20vh;
+   box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+   background-size: cover;
+   border: 1px solid #fff;
+   color: #000;
+   margin: 10px;
+}
+
+.character a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   text-decoration: none;
+   color: #000;
+   font-size: 20px;
+}
+
+div.selectGameRole {
+   border: 1px solid #fff;
+   width: 50vw;
+   height: 50vw;
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.selectGameRole a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   color: #000;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+div.selectGameRole:nth-of-type(1) {
+   background-color: #FFC800;
+}
+
+div.selectGameRole i {
+   font-size: 50px;
 }
 
 div.stats {
@@ -400,42 +405,8 @@ div.plus>span:nth-of-type(2) {
    transform: translateY(-50%) rotate(90deg);
 }
 
-main#player p:last-child {
-   text-align: center;
-}
-
-main#player p:last-child>span {
-   color: #FFC800;
-}
-
-aside {
-   position: fixed;
-   top: 0;
-   left: 0;
-   padding: 100px 15px;
-   background-color: #C4C4C4;
-   width: 100vw;
-   height: 100vh;
-   transform: translateX(100%);
-   transition: .5s;
-   z-index: 1;
-   overflow: scroll;
-}
-
-aside h1 {
-   color: #000;
-   text-align: center;
-}
-
-aside p {
-   font-weight: 300;
-   color: black;
-   text-align: justify;
-   margin: 10px 0;
-}
-
-aside p::first-letter {
-   font-weight: 400;
+.expansion1 {
+   border: 1px solid #FFC800;
 }
 
 div#workInProgress {
@@ -472,6 +443,20 @@ div#workInProgress i {
       min-height: calc(100vh - 50px);
    }
 
+   div.character {
+      width: 20vw;
+      height: 20vw;
+      box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.6);
+      background-size: cover;
+      border: 1px solid #fff;
+      color: #000;
+      margin: 10px;
+   }
+
+   div.character a {
+      font-size: 20px;
+   }
+
    main#selectGameRole {
       justify-content: space-around;
    }
@@ -479,10 +464,6 @@ div#workInProgress i {
    div.selectGameRole {
       width: 50vh;
       height: 50vh;
-   }
-
-   div.character a {
-      font-size: 25px;
    }
 
    div#workInProgress {

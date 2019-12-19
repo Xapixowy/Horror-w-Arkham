@@ -444,12 +444,8 @@ div#workInProgress i {
    }
 
    div.character {
-      width: 40vh;
-      height: 40vh;
-   }
-
-   div.character a {
-      font-size: 26px;
+      width: 20vw;
+      height: 20vw;
    }
 
    main#selectGameRole {

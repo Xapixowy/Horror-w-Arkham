@@ -285,7 +285,7 @@ footer {
    text-align: center;
    text-decoration: none;
    color: #000;
-   font-size: 20px;
+   font-size: 21px;
 }
 
 div.selectGameRole {
@@ -444,12 +444,12 @@ div#workInProgress i {
    }
 
    div.character {
-      width: 35vh;
-      height: 35vh;
+      width: 40vh;
+      height: 40vh;
    }
 
    div.character a {
-      font-size: 20px;
+      font-size: 26px;
    }
 
    main#selectGameRole {

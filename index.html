@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Horror w Arkham</title>
+      <link
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="/styles.css" />
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Horror w Arkham</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-   <link rel="stylesheet" href="./styles.css">
-</head>
-
-<body>
-   <button id="navClick">
-      <div class="burger"></div>
-      <div class="burger"></div>
-      <div class="burger"></div>
-   </button>
-   <nav>
-      <ul>
-         <li><a class="thisSite" href="./">Horror w Arkham</a></li>
-         <li><a href="./characters.html">Postacie</a></li>
-      </ul>
-   </nav>
-   <main>
-      <img src="./img/cover-small.jpeg" alt="Zdjęcie okładki gry">
-      <p>Witaj na stronie mającej na celu zastąpienie Karty Postaci w grze planszowej "<strong>Horror w Arkham</strong>"</p>
-      <p>Aby zacząć korzystać z aplikacji, wybierz powyżej zakładkę "<strong>Postacie</strong>, a następnie kliknij na jedną z dostępnych postaci. Będziesz miał dostęp do zdjęcia, podstawowych informacji, a także do ustalenia podstawowych statystyk."</p>
-      <p style="font-weight: 700">Życzę miłego korzystania</p>
-   </main>
-   <footer>
-      2019 &copy Jakub Chodziński
-   </footer>
-   <script src="script.js"></script>
-</body>
-
+   <body>
+      <button id="navClick">
+         <div class="burger"></div>
+         <div class="burger"></div>
+         <div class="burger"></div>
+      </button>
+      <nav>
+         <ul>
+            <li><a class="thisSite" href="/">Horror w Arkham</a></li>
+            <li><a href="/characters.html">Postacie</a></li>
+            <li><a href="/manual.html">Instrukcja</a></li>
+         </ul>
+      </nav>
+      <main id="landing">
+         <img src="./img/cover-small.jpeg" alt="Zdjęcie okładki gry" />
+         <p>
+            Witaj na stronie mającej na celu zastąpienie Karty Postaci w grze planszowej "<strong
+               >Horror w Arkham</strong
+            >"
+         </p>
+         <p>
+            Aby zacząć korzystać z aplikacji, wybierz powyżej zakładkę "<strong>Postacie</strong>, a następnie kliknij
+            na jedną z dostępnych postaci. Będziesz miał dostęp do zdjęcia, podstawowych informacji, a także do
+            ustalenia podstawowych statystyk."
+         </p>
+         <p style="font-weight: 700">Życzę miłego korzystania</p>
+      </main>
+      <footer>2019 &copy Jakub Chodziński</footer>
+      <script src="script.js"></script>
+   </body>
 </html>

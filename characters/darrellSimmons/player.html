@@ -1,155 +1,168 @@
 <!DOCTYPE html>
 <html lang="pl">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Darrell Simmons (Zwykły gracz) - Horror w Arkham</title>
+      <link
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+         rel="stylesheet"
+      />
+      <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/styles.css" />
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Darrell Simmons (Zwykły gracz) - Horror w Arkham</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="./../../styles.css">
-</head>
-
-<body onload="valueCheck()">
-   <button id="navClick">
-      <div class="burger"></div>
-      <div class="burger"></div>
-      <div class="burger"></div>
-   </button>
-   <button id="loreClick">
-      <i class="fas fa-question"></i>
-   </button>
-   <nav>
-      <ul>
-         <li><a href="./../../">Horror w Arkham</a></li>
-         <li><a class="thisSite" href="./../../characters.html">Postacie</a></li>
-      </ul>
-   </nav>
-   <aside>
-      <h1>Co wydarzyło się wcześniej:</h1>
-      <p>Nawet kiedy był młodszy, Darrell wiedział, że z tym małym, dziwnym miasteczkiem jest coś nie tak. Po ukończeniu liceum rozpoczął pracę w Arkham Advertiser jako fotograf. Od tamtego czasu, przez lata pracy, poznał miasteczko jak własną kieszeń.</p>
-      <p>Ostatniej nocy Darrell zobaczył coś straszliwego - coś, co dogłębnie wstrząsnęło jego światem i zniszczyło iluzję bezpieczeństwa, którą każdy z nas krzewi w sobie, aby chronić swój umysł i duszę. Jego redaktor twierdzi, że coś mu się przewidziało, ale kiedy Darrell opuszcza budynek gazety, jest pewien tego co widział i zamierza to pokazać światu! Tym razem będzie bardziej ostrożny. Tym razem zrobi zdjęcia i udowodni, że w Arkham dzieje się coś nienormalnego.</p>
-   </aside>
-   <main id="player">
-      <h5>Fotograf</h5>
-      <img src="./cover-small.jpeg" alt="Zdjęcie okładki gry">
-      <h1>Darrell Simmons</h1>
-      <span class="lineAcross"></span>
-      <table>
-         <tr>
-            <th>Pole startowe:</th>
-            <td>Redakcja</td>
-         </tr>
-         <tr>
-            <th>Stały ekwipunek:</th>
-            <td>
-               <ul>
-                  <li>4$,</li>
-                  <li>1 żeton Wskazówki,</li>
-                  <li>1 karta Specjalna (Honorarium)</li>
-               </ul>
-            </td>
-         </tr>
-         <tr>
-            <th>Losowy ekwipunek:</th>
-            <td>
-               <ul>
-                  <li>1 Przedmiot powszechny,</li>
-                  <li>2 Przedmioty unikatowe,</li>
-                  <li>1 Umiejętność</li>
-               </ul>
-            </td>
-         </tr>
-      </table>
-      <span class="lineAcross"></span>
-      <h4>TUTEJSZY</h4>
-      <p><strong>Spotkanie w miasteczku: </strong>Kiedy losuje kartę obszaru Arkham, Darrell dobiera 2 karty i wybiera, którą z nich chce rozegrać. Ta zdolność nie działa podczas spotkań w Innych Światach.</p>
-      <span class="lineAcross"></span>
-      <h4>POCZYTALNOŚĆ</h4>
-      <div class="stats sanity">
-         <div class="minus">
-            <span></span>
+   <body onload="valueCheck()">
+      <button id="navClick">
+         <div class="burger"></div>
+         <div class="burger"></div>
+         <div class="burger"></div>
+      </button>
+      <button id="loreClick">
+         <i class="fas fa-question"></i>
+      </button>
+      <nav>
+         <ul>
+            <li><a href="/">Horror w Arkham</a></li>
+            <li><a class="thisSite" href="/characters.html">Postacie</a></li>
+            <li><a href="/manual.html">Instrukcja</a></li>
+         </ul>
+      </nav>
+      <aside>
+         <h1>Co wydarzyło się wcześniej:</h1>
+         <p>
+            Nawet kiedy był młodszy, Darrell wiedział, że z tym małym, dziwnym miasteczkiem jest coś nie tak. Po
+            ukończeniu liceum rozpoczął pracę w Arkham Advertiser jako fotograf. Od tamtego czasu, przez lata pracy,
+            poznał miasteczko jak własną kieszeń.
+         </p>
+         <p>
+            Ostatniej nocy Darrell zobaczył coś straszliwego - coś, co dogłębnie wstrząsnęło jego światem i zniszczyło
+            iluzję bezpieczeństwa, którą każdy z nas krzewi w sobie, aby chronić swój umysł i duszę. Jego redaktor
+            twierdzi, że coś mu się przewidziało, ale kiedy Darrell opuszcza budynek gazety, jest pewien tego co widział
+            i zamierza to pokazać światu! Tym razem będzie bardziej ostrożny. Tym razem zrobi zdjęcia i udowodni, że w
+            Arkham dzieje się coś nienormalnego.
+         </p>
+      </aside>
+      <main id="player">
+         <h5>Fotograf</h5>
+         <img src="./cover-small.jpeg" alt="Zdjęcie okładki gry" />
+         <h1>Darrell Simmons</h1>
+         <span class="lineAcross"></span>
+         <table>
+            <tr>
+               <th>Pole startowe:</th>
+               <td>Redakcja</td>
+            </tr>
+            <tr>
+               <th>Stały ekwipunek:</th>
+               <td>
+                  <ul>
+                     <li>4$,</li>
+                     <li>1 żeton Wskazówki,</li>
+                     <li>1 karta Specjalna (Honorarium)</li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <th>Losowy ekwipunek:</th>
+               <td>
+                  <ul>
+                     <li>1 Przedmiot powszechny,</li>
+                     <li>2 Przedmioty unikatowe,</li>
+                     <li>1 Umiejętność</li>
+                  </ul>
+               </td>
+            </tr>
+         </table>
+         <span class="lineAcross"></span>
+         <h4>TUTEJSZY</h4>
+         <p>
+            <strong>Spotkanie w miasteczku: </strong>Kiedy losuje kartę obszaru Arkham, Darrell dobiera 2 karty i
+            wybiera, którą z nich chce rozegrać. Ta zdolność nie działa podczas spotkań w Innych Światach.
+         </p>
+         <span class="lineAcross"></span>
+         <h4>POCZYTALNOŚĆ</h4>
+         <div class="stats sanity">
+            <div class="minus">
+               <span></span>
+            </div>
+            <div class="value">4</div>
+            <div class="plus">
+               <span></span>
+               <span></span>
+            </div>
          </div>
-         <div class="value">4</div>
-         <div class="plus">
-            <span></span>
-            <span></span>
+         <h4>WYTRZYMAŁOŚĆ</h4>
+         <div class="stats endurance">
+            <div class="minus">
+               <span></span>
+            </div>
+            <div class="value">6</div>
+            <div class="plus">
+               <span></span>
+               <span></span>
+            </div>
          </div>
-      </div>
-      <h4>WYTRZYMAŁOŚĆ</h4>
-      <div class="stats endurance">
-         <div class="minus">
-            <span></span>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>SZYBKOŚĆ</p>
+            <div class="values">
+               <p>2</p>
+               <p>3</p>
+               <p>4</p>
+               <p>5</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+               <p>0</p>
+            </div>
+            <p>SKRADANIE SIĘ</p>
          </div>
-         <div class="value">6</div>
-         <div class="plus">
-            <span></span>
-            <span></span>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>WALECZNOŚĆ</p>
+            <div class="values">
+               <p>2</p>
+               <p>3</p>
+               <p>4</p>
+               <p>5</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>WOLA</p>
          </div>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>SZYBKOŚĆ</p>
-         <div class="values">
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>WIEDZA</p>
+            <div class="values">
+               <p>0</p>
+               <p>1</p>
+               <p>2</p>
+               <p>3</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>SZCZĘŚCIE</p>
          </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-            <p>0</p>
-         </div>
-         <p>SKRADANIE SIĘ</p>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>WALECZNOŚĆ</p>
-         <div class="values">
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-         </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>WOLA</p>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>WIEDZA</p>
-         <div class="values">
-            <p>0</p>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-         </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>SZCZĘŚCIE</p>
-      </div>
-      <span class="lineAcross"></span>
-      <p>Skupienie: <span>2</span></p>
-   </main>
-   <footer>
-      2019 &copy Jakub Chodziński
-   </footer>
-   <script src="./../../script.js"></script>
-   <script src="./../../characters.js"></script>
-</body>
-
+         <span class="lineAcross"></span>
+         <p>Skupienie: <span>2</span></p>
+      </main>
+      <footer>2019 &copy Jakub Chodziński</footer>
+      <script src="./../../script.js"></script>
+      <script src="./../../characters.js"></script>
+   </body>
 </html>

@@ -1,155 +1,170 @@
 <!DOCTYPE html>
 <html lang="pl">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Leo Anderson (Zwykły gracz) - Horror w Arkham</title>
+      <link
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+         rel="stylesheet"
+      />
+      <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/styles.css" />
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Leo Anderson (Zwykły gracz) - Horror w Arkham</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="./../../styles.css">
-</head>
-
-<body onload="valueCheck()">
-   <button id="navClick">
-      <div class="burger"></div>
-      <div class="burger"></div>
-      <div class="burger"></div>
-   </button>
-   <button id="loreClick">
-      <i class="fas fa-question"></i>
-   </button>
-   <nav>
-      <ul>
-         <li><a href="./../../">Horror w Arkham</a></li>
-         <li><a class="thisSite" href="./../../characters.html">Postacie</a></li>
-      </ul>
-   </nav>
-   <aside>
-      <h1>Co wydarzyło się wcześniej:</h1>
-      <p>Anderson zabrał ze sobą na Jukatan siedmu ludzi. Dwóch wróciło - mniej więcej. Tak naprawdę z życiem z dżungli powróciło trzech ludzi, ale Mitch Brown nie był już sobą. Prawdę mówiąc, zamienił się w mamroczącego szaleńca i odesłano go już do przytułku.</p>
-      <p>Leo nie potrafił przeczytać tabliczek, które odnaleźli w tych ruinach - z ich siedmiu potrafił to tylko dr Volk - ale teraz trzyma notatki dobrego doktora w dłoni. Te, które Volk sporządził, zanim stracił rozum. Zanim zabił dwóch ludzi Andersona.</p>
-      <p>Dziś Anderson zszedł ze statku w dokach Arkham. Usłyszał, że dr Philips, mężczyzna, który zorganizował ekspedycję na Jukatan, nie żyje. Philips nie żyje, a to oznacza, że Anderson trzyma teraz w dłoni zapiski morderczego szaleństwa - zapiski, w których dzisiejsza data jest zakreślona krwawym kółkiem.</p>
-   </aside>
-   <main id="player">
-      <h5>Dowódca ekspedycji</h5>
-      <img class="expansion1" src="./cover-small.jpeg" alt="Zdjęcie okładki gry">
-      <h1>Leo Anderson</h1>
-      <span class="lineAcross"></span>
-      <table>
-         <tr>
-            <th>Pole startowe:</th>
-            <td>Rzeczne Doki</td>
-         </tr>
-         <tr>
-            <th>Stały ekwipunek:</th>
-            <td>
-               <ul>
-                  <li>5$,</li>
-                  <li>2 żetony Wskazówek</li>
-               </ul>
-            </td>
-         </tr>
-         <tr>
-            <th>Losowy ekwipunek:</th>
-            <td>
-               <ul>
-                  <li>1 Sprzymierzeniec,</li>
-                  <li>2 Przedmioty powszechne,</li>
-                  <li>1 Umiejętność</li>
-               </ul>
-            </td>
-         </tr>
-      </table>
-      <span class="lineAcross"></span>
-      <h4>ZDOLNOŚCI PRZYWÓDCZE</h4>
-      <p><strong>Dowolna faza: </strong>Raz na turę Leo może zapobiec utracie 1 punktu Wytrzymałości lub Poczytalności przez dowolnego Badacza.</p>
-      <span class="lineAcross"></span>
-      <h4>POCZYTALNOŚĆ</h4>
-      <div class="stats sanity">
-         <div class="minus">
-            <span></span>
+   <body onload="valueCheck()">
+      <button id="navClick">
+         <div class="burger"></div>
+         <div class="burger"></div>
+         <div class="burger"></div>
+      </button>
+      <button id="loreClick">
+         <i class="fas fa-question"></i>
+      </button>
+      <nav>
+         <ul>
+            <li><a href="/">Horror w Arkham</a></li>
+            <li><a class="thisSite" href="/characters.html">Postacie</a></li>
+            <li><a href="/manual.html">Instrukcja</a></li>
+         </ul>
+      </nav>
+      <aside>
+         <h1>Co wydarzyło się wcześniej:</h1>
+         <p>
+            Anderson zabrał ze sobą na Jukatan siedmu ludzi. Dwóch wróciło - mniej więcej. Tak naprawdę z życiem z
+            dżungli powróciło trzech ludzi, ale Mitch Brown nie był już sobą. Prawdę mówiąc, zamienił się w mamroczącego
+            szaleńca i odesłano go już do przytułku.
+         </p>
+         <p>
+            Leo nie potrafił przeczytać tabliczek, które odnaleźli w tych ruinach - z ich siedmiu potrafił to tylko dr
+            Volk - ale teraz trzyma notatki dobrego doktora w dłoni. Te, które Volk sporządził, zanim stracił rozum.
+            Zanim zabił dwóch ludzi Andersona.
+         </p>
+         <p>
+            Dziś Anderson zszedł ze statku w dokach Arkham. Usłyszał, że dr Philips, mężczyzna, który zorganizował
+            ekspedycję na Jukatan, nie żyje. Philips nie żyje, a to oznacza, że Anderson trzyma teraz w dłoni zapiski
+            morderczego szaleństwa - zapiski, w których dzisiejsza data jest zakreślona krwawym kółkiem.
+         </p>
+      </aside>
+      <main id="player">
+         <h5>Dowódca ekspedycji</h5>
+         <img class="expansion1" src="./cover-small.jpeg" alt="Zdjęcie okładki gry" />
+         <h1>Leo Anderson</h1>
+         <span class="lineAcross"></span>
+         <table>
+            <tr>
+               <th>Pole startowe:</th>
+               <td>Rzeczne Doki</td>
+            </tr>
+            <tr>
+               <th>Stały ekwipunek:</th>
+               <td>
+                  <ul>
+                     <li>5$,</li>
+                     <li>2 żetony Wskazówek</li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <th>Losowy ekwipunek:</th>
+               <td>
+                  <ul>
+                     <li>1 Sprzymierzeniec,</li>
+                     <li>2 Przedmioty powszechne,</li>
+                     <li>1 Umiejętność</li>
+                  </ul>
+               </td>
+            </tr>
+         </table>
+         <span class="lineAcross"></span>
+         <h4>ZDOLNOŚCI PRZYWÓDCZE</h4>
+         <p>
+            <strong>Dowolna faza: </strong>Raz na turę Leo może zapobiec utracie 1 punktu Wytrzymałości lub
+            Poczytalności przez dowolnego Badacza.
+         </p>
+         <span class="lineAcross"></span>
+         <h4>POCZYTALNOŚĆ</h4>
+         <div class="stats sanity">
+            <div class="minus">
+               <span></span>
+            </div>
+            <div class="value">5</div>
+            <div class="plus">
+               <span></span>
+               <span></span>
+            </div>
          </div>
-         <div class="value">5</div>
-         <div class="plus">
-            <span></span>
-            <span></span>
+         <h4>WYTRZYMAŁOŚĆ</h4>
+         <div class="stats endurance">
+            <div class="minus">
+               <span></span>
+            </div>
+            <div class="value">5</div>
+            <div class="plus">
+               <span></span>
+               <span></span>
+            </div>
          </div>
-      </div>
-      <h4>WYTRZYMAŁOŚĆ</h4>
-      <div class="stats endurance">
-         <div class="minus">
-            <span></span>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>SZYBKOŚĆ</p>
+            <div class="values">
+               <p>1</p>
+               <p>2</p>
+               <p>3</p>
+               <p>4</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>SKRADANIE SIĘ</p>
          </div>
-         <div class="value">5</div>
-         <div class="plus">
-            <span></span>
-            <span></span>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>WALECZNOŚĆ</p>
+            <div class="values">
+               <p>1</p>
+               <p>2</p>
+               <p>3</p>
+               <p>4</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>WOLA</p>
          </div>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>SZYBKOŚĆ</p>
-         <div class="values">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>WIEDZA</p>
+            <div class="values">
+               <p>1</p>
+               <p>2</p>
+               <p>3</p>
+               <p>4</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>SZCZĘŚCIE</p>
          </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>SKRADANIE SIĘ</p>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>WALECZNOŚĆ</p>
-         <div class="values">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-         </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>WOLA</p>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>WIEDZA</p>
-         <div class="values">
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-         </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>SZCZĘŚCIE</p>
-      </div>
-      <span class="lineAcross"></span>
-      <p>Skupienie: <span>2</span></p>
-   </main>
-   <footer>
-      2019 &copy Jakub Chodziński
-   </footer>
-   <script src="./../../script.js"></script>
-   <script src="./../../characters.js"></script>
-</body>
-
+         <span class="lineAcross"></span>
+         <p>Skupienie: <span>2</span></p>
+      </main>
+      <footer>2019 &copy Jakub Chodziński</footer>
+      <script src="./../../script.js"></script>
+      <script src="./../../characters.js"></script>
+   </body>
 </html>

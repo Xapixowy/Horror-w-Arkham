@@ -1,3 +1,8 @@
+:root {
+   --arkhamHorror: #fff;
+   --dunwichHorror: #ffc800;
+}
+
 * {
    margin: 0;
    padding: 0;
@@ -7,8 +12,16 @@
 body {
    background-color: #222222;
    font-family: 'Roboto', sans-serif;
-   font-size: 15px;
+   font-size: 16px;
    color: #fff;
+}
+
+.arkhamHorror {
+   color: var(--arkhamHorror);
+}
+
+.dunwichHorror {
+   color: var(--dunwichHorror);
 }
 
 button {
@@ -20,8 +33,8 @@ button {
    border-radius: 10px;
    cursor: pointer;
    overflow: hidden;
-   transition: .5s;
-   background-color: #C4C4C4;
+   transition: 0.5s;
+   background-color: #c4c4c4;
 }
 
 button#navClick {
@@ -30,26 +43,26 @@ button#navClick {
    left: 10px;
 }
 
-button#navClick>div.burger {
+button#navClick > div.burger {
    border: 2px solid #000;
    width: 34px;
-   transition: .5s;
+   transition: 0.5s;
    transform-origin: center center;
 }
 
-button#navClick>div.burger:nth-of-type(1) {
+button#navClick > div.burger:nth-of-type(1) {
    position: absolute;
    top: 8px;
    left: 8px;
 }
 
-button#navClick>div.burger:nth-of-type(2) {
+button#navClick > div.burger:nth-of-type(2) {
    position: absolute;
    top: 23px;
    left: 8px;
 }
 
-button#navClick>div.burger:nth-of-type(3) {
+button#navClick > div.burger:nth-of-type(3) {
    position: absolute;
    bottom: 8px;
    left: 8px;
@@ -60,12 +73,15 @@ button#randomCharacter {
    right: 10px;
    width: 50px;
    height: 50px;
-   background-color: #FFC800;
+   background-color: var(--dunwichHorror);
    font-size: 30px;
 }
 
 button#randomCharacter i {
-   animation: wingle 1s ease-in-out infinite both;
+   display: inline-block;
+   transform-origin: center top;
+   font-size: 36px;
+   animation: slideDown 1.5s ease-in-out infinite both;
 }
 
 button#loreClick {
@@ -76,7 +92,7 @@ button#loreClick {
 }
 
 button#loreClick i {
-   transition: transform .5s;
+   transition: transform 0.5s;
 }
 
 nav {
@@ -84,11 +100,11 @@ nav {
    top: 0;
    left: 0;
    padding-top: 100px;
-   background-color: #C4C4C4;
+   background-color: #c4c4c4;
    width: 100vw;
    height: 100vh;
    transform: translateX(-100%);
-   transition: .5s;
+   transition: 0.5s;
    z-index: 2;
 }
 
@@ -126,11 +142,11 @@ aside {
    top: 0;
    left: 0;
    padding: 100px 15px;
-   background-color: #C4C4C4;
+   background-color: #c4c4c4;
    width: 100vw;
    height: 100vh;
    transform: translateX(100%);
-   transition: .5s;
+   transition: 0.5s;
    z-index: 1;
    overflow: scroll;
 }
@@ -158,19 +174,102 @@ main {
    display: flex;
    flex-wrap: wrap;
    flex-direction: column;
-   justify-content: space-between;
    align-items: center;
 }
 
+main div {
+   width: 100%;
+   margin: 15px 0;
+}
+
+main a {
+   display: block;
+   width: 100%;
+   height: 100%;
+   text-decoration: none;
+   text-align: center;
+}
+
+main a.download {
+   font-size: 1.25em;
+}
+
+main hr {
+   width: 100%;
+   color: #fff;
+   margin: 10px 0 25px 0;
+}
+
+main#landing {
+   justify-content: space-evenly;
+}
+
 main img {
-   width: 250px;
-   border-radius: 50px;
+   width: 100%;
+   border-radius: 10px;
    border: 1px solid #fff;
+   margin: 15px 0;
+}
+
+main p > img {
+   margin-left: 15px;
+   width: 30%;
+   border: none;
+   float: right;
+}
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+   text-align: center;
+   text-transform: uppercase;
+   margin: 10px 0;
+}
+
+main h1::first-letter {
+   font-size: 2.05em;
+}
+
+main h2::first-letter {
+   font-size: 1.55em;
 }
 
 main p {
-   text-align: center;
+   text-align: justify;
    margin: 15px 0;
+}
+
+main p.teller {
+   font-family: 'Times New Roman', Times, serif;
+   font-style: italic;
+}
+
+main p.disclaimer {
+   padding: 10px;
+   font-size: 14px;
+   color: #000;
+   background-color: #fffbd6;
+   border-radius: 10px;
+}
+
+main > ul {
+   margin: 15px 0;
+   line-height: 25px;
+}
+
+main ul > li {
+   margin-left: 15px;
+}
+
+main ul > li > ul > li {
+   margin-left: 30px;
+}
+
+main#landing p {
+   text-align: center;
 }
 
 main#selectGameRole {
@@ -179,21 +278,8 @@ main#selectGameRole {
    align-items: baseline;
 }
 
-main#selectGameRole h1 {
-   flex-basis: 100%;
-   text-align: center;
-   margin-bottom: 20px;
-}
-
 main#player {
    display: block;
-}
-
-main#player h1,
-main#player h4,
-main#player h5 {
-   margin: 10px 0;
-   text-align: center;
 }
 
 main#player p {
@@ -203,6 +289,7 @@ main#player p {
 }
 
 main#player img {
+   width: 75%;
    display: block;
    margin: 0 auto;
 }
@@ -232,8 +319,8 @@ main#player p:last-child {
    text-align: center;
 }
 
-main#player p:last-child>span {
-   color: #FFC800;
+main#player p:last-child > span {
+   color: var(--dunwichHorror);
 }
 
 footer {
@@ -308,7 +395,7 @@ div.selectGameRole a {
 }
 
 div.selectGameRole:nth-of-type(1) {
-   background-color: #FFC800;
+   background-color: var(--dunwichHorror);
 }
 
 div.selectGameRole i {
@@ -323,7 +410,7 @@ div.stats {
    margin-bottom: 30px;
 }
 
-div.stats>div {
+div.stats > div {
    width: 50px;
    height: 50px;
    background-color: #c4c4c4;
@@ -334,23 +421,23 @@ div.stats>div {
    font-weight: 700;
 }
 
-div.stats:nth-of-type(1)>div {
+div.stats:nth-of-type(1) > div {
    color: rgb(0, 100, 170);
 }
 
-div.stats:nth-of-type(2)>div {
+div.stats:nth-of-type(2) > div {
    color: rgb(175, 30, 0);
 }
 
-div.stats>div.minus,
-div.stats>div.plus {
+div.stats > div.minus,
+div.stats > div.plus {
    position: relative;
    background-color: transparent;
    cursor: pointer;
 }
 
-div.minus>span,
-div.plus>span {
+div.minus > span,
+div.plus > span {
    position: absolute;
    top: 50%;
    left: 0;
@@ -365,20 +452,20 @@ div.slider {
    margin: 10px 0;
 }
 
-div.slider>div.values {
+div.slider > div.values {
    display: flex;
    justify-content: space-between;
 }
 
-div.slider>div.values:nth-of-type(1) {
-   color: #00A3FF;
+div.slider > div.values:nth-of-type(1) {
+   color: #00a3ff;
 }
 
-div.slider>div.values:nth-of-type(2) {
-   color: #FF0000;
+div.slider > div.values:nth-of-type(2) {
+   color: #ff0000;
 }
 
-main#player>div.slider>p {
+main#player > div.slider > p {
    margin: 5px 0;
    width: 100%;
    text-align: center;
@@ -401,12 +488,12 @@ input.slider::-webkit-slider-thumb {
    cursor: pointer;
 }
 
-div.plus>span:nth-of-type(2) {
+div.plus > span:nth-of-type(2) {
    transform: translateY(-50%) rotate(90deg);
 }
 
 .expansion1 {
-   border: 1px solid #FFC800;
+   border: 1px solid var(--dunwichHorror);
 }
 
 div#workInProgress {
@@ -424,7 +511,7 @@ div#workInProgress i {
    margin-bottom: 20px;
 }
 
-@keyframes wingle {
+@keyframes wiggle {
    0% {
       transform: rotate(15deg);
    }
@@ -435,6 +522,27 @@ div#workInProgress i {
 
    100% {
       transform: rotate(15deg);
+   }
+}
+
+@keyframes slideDown {
+   0% {
+      transform: translateY(0);
+   }
+   25% {
+      transform: translateY(0);
+   }
+   50% {
+      transform: translateY(200%);
+   }
+   50.001% {
+      transform: translateY(-200%);
+   }
+   75% {
+      transform: translateY(0);
+   }
+   100% {
+      transform: translateY(0);
    }
 }
 
@@ -461,7 +569,7 @@ div#workInProgress i {
       font-size: 5vh;
    }
 
-   div#workInProgress>i {
+   div#workInProgress > i {
       font-size: 30vh;
    }
 }

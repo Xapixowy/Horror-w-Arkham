@@ -1,156 +1,174 @@
 <!DOCTYPE html>
 <html lang="pl">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Rita Young (Zwykły gracz) - Horror w Arkham</title>
+      <link
+         href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
+         rel="stylesheet"
+      />
+      <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="/styles.css" />
+   </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Rita Young (Zwykły gracz) - Horror w Arkham</title>
-   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext" rel="stylesheet">
-   <script src="https://kit.fontawesome.com/89bad216c9.js" crossorigin="anonymous"></script>
-   <link rel="stylesheet" href="./../../styles.css">
-</head>
-
-<body onload="valueCheck()">
-   <button id="navClick">
-      <div class="burger"></div>
-      <div class="burger"></div>
-      <div class="burger"></div>
-   </button>
-   <button id="loreClick">
-      <i class="fas fa-question"></i>
-   </button>
-   <nav>
-      <ul>
-         <li><a href="./../../">Horror w Arkham</a></li>
-         <li><a class="thisSite" href="./../../characters.html">Postacie</a></li>
-      </ul>
-   </nav>
-   <aside>
-      <h1>Co wydarzyło się wcześniej:</h1>
-      <p>Dorastając na Południu, Rita każdego dnia musiała walczyć z dyskryminacją tego czy innego rodzaju. Pochodziła z biednej rodziny, a jednak ciężką pracą wywalczyła sobie stypendium na Uniwersytecie Miskatonic, gdzie dołączyła do drużyny lekkoatletycznej. Teraz, być może, będzie musiała walczyć o życie.</p>
-      <p>Ktoś ją prześladuje. Tego jest pewna. Nie ma pojęcia kto i czemu, ale w jej akademiku kręciło się kilku dziwnych mężczyzn. W zeszłym tygodniu jej współlokatorka została zaatakowana - tego samego wieczoru, kiedy założyła kurtkę Rity. Ktoś musiał je pomylić.</p>
-      <p>Dzisiaj Rita spędziła kilka godzin próbując przekonać policję, aby wreszcie coś zrobiła. Szeryf oznajmił jej, że ma związane ręce. Nie ma dowodów - nie ma sprawy. Ucieczka byłaby najlepszym sposobem uniknięcia tego widma śmierci, które nad nią zawisło, ale to nie w stylu Rity. Jej prześladowcy mogą być członkami Ku Klux Klanu albo jeszcze bardziej złowieszczej organizacji, to nie ma znaczenia. Wyjdzie im naprzeciw, tak jak mierzyła się ze światem przez całe swoje życie.</p>
-   </aside>
-   <main id="player">
-      <h5>Atletka</h5>
-      <img class="expansion1" src="./cover-small.jpeg" alt="Zdjęcie okładki gry">
-      <h1>Rita Young</h1>
-      <span class="lineAcross"></span>
-      <table>
-         <tr>
-            <th>Pole startowe:</th>
-            <td>Posterunek Policji</td>
-         </tr>
-         <tr>
-            <th>Stały ekwipunek:</th>
-            <td>
-               <ul>
-                  <li>4$,</li>
-                  <li>2 żetony Wskazówek,</li>
-                  <li>1 karta Specjalna (Honorarium)</li>
-               </ul>
-            </td>
-         </tr>
-         <tr>
-            <th>Losowy ekwipunek:</th>
-            <td>
-               <ul>
-                  <li>2 Przedmioty powszechne,</li>
-                  <li>1 Przedmiot unikatowy,</li>
-                  <li>1 Umiejętność</li>
-               </ul>
-            </td>
-         </tr>
-      </table>
-      <span class="lineAcross"></span>
-      <h4>WYTRWAŁA</h4>
-      <p><strong>Dowolna faza: </strong>Kiedy losuje jedną lub więcej kart Ran lub Szaleństwa dobiera dodatkową kartę, a następnie odrzuca jedną z nich, zatrzymując pozostałe. Dodatkowo, jeśli Rita otrzyma duplikat posiadanej już karty Rany lub Szaleństwa, druga karta nie wywiera żadnego efektu.</p>
-      <span class="lineAcross"></span>
-      <h4>POCZYTALNOŚĆ</h4>
-      <div class="stats sanity">
-         <div class="minus">
-            <span></span>
+   <body onload="valueCheck()">
+      <button id="navClick">
+         <div class="burger"></div>
+         <div class="burger"></div>
+         <div class="burger"></div>
+      </button>
+      <button id="loreClick">
+         <i class="fas fa-question"></i>
+      </button>
+      <nav>
+         <ul>
+            <li><a href="/">Horror w Arkham</a></li>
+            <li><a class="thisSite" href="/characters.html">Postacie</a></li>
+            <li><a href="/manual.html">Instrukcja</a></li>
+         </ul>
+      </nav>
+      <aside>
+         <h1>Co wydarzyło się wcześniej:</h1>
+         <p>
+            Dorastając na Południu, Rita każdego dnia musiała walczyć z dyskryminacją tego czy innego rodzaju.
+            Pochodziła z biednej rodziny, a jednak ciężką pracą wywalczyła sobie stypendium na Uniwersytecie Miskatonic,
+            gdzie dołączyła do drużyny lekkoatletycznej. Teraz, być może, będzie musiała walczyć o życie.
+         </p>
+         <p>
+            Ktoś ją prześladuje. Tego jest pewna. Nie ma pojęcia kto i czemu, ale w jej akademiku kręciło się kilku
+            dziwnych mężczyzn. W zeszłym tygodniu jej współlokatorka została zaatakowana - tego samego wieczoru, kiedy
+            założyła kurtkę Rity. Ktoś musiał je pomylić.
+         </p>
+         <p>
+            Dzisiaj Rita spędziła kilka godzin próbując przekonać policję, aby wreszcie coś zrobiła. Szeryf oznajmił
+            jej, że ma związane ręce. Nie ma dowodów - nie ma sprawy. Ucieczka byłaby najlepszym sposobem uniknięcia
+            tego widma śmierci, które nad nią zawisło, ale to nie w stylu Rity. Jej prześladowcy mogą być członkami Ku
+            Klux Klanu albo jeszcze bardziej złowieszczej organizacji, to nie ma znaczenia. Wyjdzie im naprzeciw, tak
+            jak mierzyła się ze światem przez całe swoje życie.
+         </p>
+      </aside>
+      <main id="player">
+         <h5>Atletka</h5>
+         <img class="expansion1" src="./cover-small.jpeg" alt="Zdjęcie okładki gry" />
+         <h1>Rita Young</h1>
+         <span class="lineAcross"></span>
+         <table>
+            <tr>
+               <th>Pole startowe:</th>
+               <td>Posterunek Policji</td>
+            </tr>
+            <tr>
+               <th>Stały ekwipunek:</th>
+               <td>
+                  <ul>
+                     <li>4$,</li>
+                     <li>2 żetony Wskazówek,</li>
+                     <li>1 karta Specjalna (Honorarium)</li>
+                  </ul>
+               </td>
+            </tr>
+            <tr>
+               <th>Losowy ekwipunek:</th>
+               <td>
+                  <ul>
+                     <li>2 Przedmioty powszechne,</li>
+                     <li>1 Przedmiot unikatowy,</li>
+                     <li>1 Umiejętność</li>
+                  </ul>
+               </td>
+            </tr>
+         </table>
+         <span class="lineAcross"></span>
+         <h4>WYTRWAŁA</h4>
+         <p>
+            <strong>Dowolna faza: </strong>Kiedy losuje jedną lub więcej kart Ran lub Szaleństwa dobiera dodatkową
+            kartę, a następnie odrzuca jedną z nich, zatrzymując pozostałe. Dodatkowo, jeśli Rita otrzyma duplikat
+            posiadanej już karty Rany lub Szaleństwa, druga karta nie wywiera żadnego efektu.
+         </p>
+         <span class="lineAcross"></span>
+         <h4>POCZYTALNOŚĆ</h4>
+         <div class="stats sanity">
+            <div class="minus">
+               <span></span>
+            </div>
+            <div class="value">4</div>
+            <div class="plus">
+               <span></span>
+               <span></span>
+            </div>
          </div>
-         <div class="value">4</div>
-         <div class="plus">
-            <span></span>
-            <span></span>
+         <h4>WYTRZYMAŁOŚĆ</h4>
+         <div class="stats endurance">
+            <div class="minus">
+               <span></span>
+            </div>
+            <div class="value">6</div>
+            <div class="plus">
+               <span></span>
+               <span></span>
+            </div>
          </div>
-      </div>
-      <h4>WYTRZYMAŁOŚĆ</h4>
-      <div class="stats endurance">
-         <div class="minus">
-            <span></span>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>SZYBKOŚĆ</p>
+            <div class="values">
+               <p>3</p>
+               <p>4</p>
+               <p>5</p>
+               <p>6</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>SKRADANIE SIĘ</p>
          </div>
-         <div class="value">6</div>
-         <div class="plus">
-            <span></span>
-            <span></span>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>WALECZNOŚĆ</p>
+            <div class="values">
+               <p>2</p>
+               <p>3</p>
+               <p>4</p>
+               <p>5</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>4</p>
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+            </div>
+            <p>WOLA</p>
          </div>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>SZYBKOŚĆ</p>
-         <div class="values">
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-            <p>6</p>
+         <span class="lineAcross"></span>
+         <div class="slider">
+            <p>WIEDZA</p>
+            <div class="values">
+               <p>0</p>
+               <p>1</p>
+               <p>2</p>
+               <p>3</p>
+            </div>
+            <input type="range" min="1" max="4" value="1" class="slider" class="slider" />
+            <div class="values">
+               <p>3</p>
+               <p>2</p>
+               <p>1</p>
+               <p>0</p>
+            </div>
+            <p>SZCZĘŚCIE</p>
          </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>SKRADANIE SIĘ</p>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>WALECZNOŚĆ</p>
-         <div class="values">
-            <p>2</p>
-            <p>3</p>
-            <p>4</p>
-            <p>5</p>
-         </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>4</p>
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-         </div>
-         <p>WOLA</p>
-      </div>
-      <span class="lineAcross"></span>
-      <div class="slider">
-         <p>WIEDZA</p>
-         <div class="values">
-            <p>0</p>
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
-         </div>
-         <input type="range" min="1" max="4" value="1" class="slider" class="slider">
-         <div class="values">
-            <p>3</p>
-            <p>2</p>
-            <p>1</p>
-            <p>0</p>
-         </div>
-         <p>SZCZĘŚCIE</p>
-      </div>
-      <span class="lineAcross"></span>
-      <p>Skupienie: <span>2</span></p>
-   </main>
-   <footer>
-      2019 &copy Jakub Chodziński
-   </footer>
-   <script src="./../../script.js"></script>
-   <script src="./../../characters.js"></script>
-</body>
-
+         <span class="lineAcross"></span>
+         <p>Skupienie: <span>2</span></p>
+      </main>
+      <footer>2019 &copy Jakub Chodziński</footer>
+      <script src="./../../script.js"></script>
+      <script src="./../../characters.js"></script>
+   </body>
 </html>

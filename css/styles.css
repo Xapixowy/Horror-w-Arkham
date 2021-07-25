@@ -289,7 +289,7 @@ aside p::first-letter {
 }
 
 section#phase {
-   display: none;
+   display: block;
    position: fixed;
    bottom: 0;
    left: 0;
@@ -299,10 +299,6 @@ section#phase {
    border-top: 1px solid white;
    z-index: 1;
    padding: 10px;
-}
-
-section#phase.shown {
-   display: block;
 }
 
 section#phase div.slidebox {
@@ -418,7 +414,8 @@ main div.characters > div.character {
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 21px;
+   font-size: 22px;
+   /* font-weight: bold; */
    text-align: center;
    color: var(--darkGrey);
    cursor: pointer;

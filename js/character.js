@@ -117,70 +117,6 @@ function loreToggle() {
 
 loreButton.addEventListener('click', loreToggle);
 
-const slideToLeft = (duration) => {
-   // duration i ms
-   const item = document.querySelector('section#phase div.slidebox');
-   item.style.transition = `${duration}ms`;
-   item.style.left = '0';
-   setTimeout(() => {
-      item.style.left = '-100%';
-   }, duration * 2);
-   setTimeout(() => {
-      item.style.transition = '';
-      item.style.left = '100%';
-   }, duration * 3);
-};
-
-let currentPhase = 0;
-let jsonValues = { phase: currentPhase };
-
-const updatePhase = (type) => {
-   slideToLeft(500);
-   setTimeout(() => {
-      const phases = {
-         first: 'Utrzymanie',
-         second: 'Ruch',
-         third: 'Spotkania w Arkham',
-         fourth: 'Spotkania w Innych Światach',
-         fifth: 'Mity',
-      };
-      const phaseName = document.querySelector('section#phase>div.current>p');
-      const phaseNumber = document.querySelector('section#phase>div.current>div.bigbox');
-      const nextPhaseName = document.querySelector('section#phase>div.next>p');
-      const nextPhaseNumber = document.querySelector('section#phase>div.next>div.box');
-
-      if (currentPhase === 5) currentPhase = 0;
-      else if (currentPhase === -1) currentPhase = 4;
-
-      if (currentPhase === 0) {
-         phaseName.textContent = phases.first;
-         phaseNumber.textContent = 'I';
-         nextPhaseName.textContent = phases.second;
-         nextPhaseNumber.textContent = 'II';
-      } else if (currentPhase === 1) {
-         phaseName.textContent = phases.second;
-         phaseNumber.textContent = 'II';
-         nextPhaseName.textContent = phases.third;
-         nextPhaseNumber.textContent = 'III';
-      } else if (currentPhase === 2) {
-         phaseName.textContent = phases.third;
-         phaseNumber.textContent = 'III';
-         nextPhaseName.textContent = phases.fourth;
-         nextPhaseNumber.textContent = 'IV';
-      } else if (currentPhase === 3) {
-         phaseName.textContent = phases.fourth;
-         phaseNumber.textContent = 'IV';
-         nextPhaseName.textContent = phases.fifth;
-         nextPhaseNumber.textContent = 'V';
-      } else {
-         phaseName.textContent = phases.fifth;
-         phaseNumber.textContent = 'V';
-         nextPhaseName.textContent = phases.first;
-         nextPhaseNumber.textContent = 'I';
-      }
-   }, 500);
-};
-
 const sanityMinus = document.querySelector('div.sanity>div.minus');
 const sanityPlus = document.querySelector('div.sanity>div.plus');
 const sanityValue = document.querySelector('div.sanity>div.value');
@@ -263,7 +199,6 @@ const resetPhaseButton = document.querySelector('button#resetPhase');
 adminSwitch.checked ? (adminSwitch.checked = false) : false;
 
 const adminPanelToggle = () => {
-   phaseSection.classList.toggle('shown');
    previousPhaseButton.classList.toggle('shown');
    nextPhaseButton.classList.toggle('shown');
    resetPhaseButton.classList.toggle('shown');
@@ -271,9 +206,80 @@ const adminPanelToggle = () => {
 
 adminSwitch.addEventListener('input', adminPanelToggle);
 
+const slideToLeft = (duration) => {
+   // duration i ms
+   const item = document.querySelector('section#phase div.slidebox');
+   item.style.transition = `${duration}ms`;
+   item.style.left = '0';
+   setTimeout(() => {
+      item.style.left = '-100%';
+   }, duration * 2);
+   setTimeout(() => {
+      item.style.transition = '';
+      item.style.left = '100%';
+   }, duration * 3);
+};
+
+let currentPhase;
+
+firebase
+   .database()
+   .ref('phase')
+   .on('value', (snapshot) => {
+      currentPhase = snapshot.val();
+      updatePhase(currentPhase);
+   });
+
+const updatePhase = (value) => {
+   let currentPhase = value;
+   slideToLeft(500);
+   setTimeout(() => {
+      const phases = {
+         first: 'Utrzymanie',
+         second: 'Ruch',
+         third: 'Spotkania w Arkham',
+         fourth: 'Spotkania w Innych Światach',
+         fifth: 'Mity',
+      };
+      const phaseName = document.querySelector('section#phase>div.current>p');
+      const phaseNumber = document.querySelector('section#phase>div.current>div.bigbox');
+      const nextPhaseName = document.querySelector('section#phase>div.next>p');
+      const nextPhaseNumber = document.querySelector('section#phase>div.next>div.box');
+
+      if (currentPhase === 5) currentPhase = sendFirebaseData('phase', 0);
+      else if (currentPhase === -1) sendFirebaseData('phase', 4);
+
+      if (currentPhase === 0) {
+         phaseName.textContent = phases.first;
+         phaseNumber.textContent = 'I';
+         nextPhaseName.textContent = phases.second;
+         nextPhaseNumber.textContent = 'II';
+      } else if (currentPhase === 1) {
+         phaseName.textContent = phases.second;
+         phaseNumber.textContent = 'II';
+         nextPhaseName.textContent = phases.third;
+         nextPhaseNumber.textContent = 'III';
+      } else if (currentPhase === 2) {
+         phaseName.textContent = phases.third;
+         phaseNumber.textContent = 'III';
+         nextPhaseName.textContent = phases.fourth;
+         nextPhaseNumber.textContent = 'IV';
+      } else if (currentPhase === 3) {
+         phaseName.textContent = phases.fourth;
+         phaseNumber.textContent = 'IV';
+         nextPhaseName.textContent = phases.fifth;
+         nextPhaseNumber.textContent = 'V';
+      } else {
+         phaseName.textContent = phases.fifth;
+         phaseNumber.textContent = 'V';
+         nextPhaseName.textContent = phases.first;
+         nextPhaseNumber.textContent = 'I';
+      }
+   }, 500);
+};
+
 previousPhaseButton.addEventListener('click', function () {
-   // uploadJson(--currentPhase);
-   updatePhase();
+   sendFirebaseData('phase', currentPhase - 1);
    this.querySelector('i').style.transform = 'translateX(-200%)';
    setTimeout(() => {
       this.querySelector('i').style.transition = 'none';
@@ -286,8 +292,7 @@ previousPhaseButton.addEventListener('click', function () {
 });
 
 nextPhaseButton.addEventListener('click', function () {
-   // uploadJson(++currentPhase);
-   updatePhase();
+   sendFirebaseData('phase', currentPhase + 1);
    this.querySelector('i').style.transform = 'translateX(200%)';
    setTimeout(() => {
       this.querySelector('i').style.transition = 'none';
@@ -300,7 +305,7 @@ nextPhaseButton.addEventListener('click', function () {
 });
 
 resetPhaseButton.addEventListener('click', function () {
-   updatePhase();
+   sendFirebaseData('phase', 0);
    this.querySelector('i').style.transform = 'rotate(360deg)';
    setTimeout(() => {
       this.querySelector('i').style.transition = 'none';

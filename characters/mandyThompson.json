@@ -1,0 +1,29 @@
+{
+   "expansion": false,
+   "name": "Mandy Thompson",
+   "profession": "Pracownik naukowy",
+   "photo": "./img/characters/mandyThompson.jpeg",
+   "lore": [
+      "Mandy przybyła do Arkham wiele lat temu, szukając pracy w charakterze pracownika naukowego na Uniwersytecie Miskatonic. Od tamtej pory współpracowała z wieloma uniwersyteckimi profesorami, zagłębiając się w ezoterycznych księgach wypełnionych informacjami naukowymi, raportami historycznymi, a czasem i wywodami okultystycznymi.",
+      "To właśnie w zeszłym tygodniu, podczas lektury starej księgi proroctw, po raz pierwszy poczuła, że trafiła na coś wielkiego. Mandy zdała sobie sprawę, że pewne znaki i omeny, które opisano w księdze mają obecnie miejsce w Arkham - znaki i omeny zwiastujące powrót straszliwej istoty określanej mianem Przedwiecznego, która miała zgnieść miasta człowieka pod swymi ohydnymi stopami.",
+      "Dziś wieczorem pełnię księżyca zabarwiła czerwień - to ostatni omen zapowiadający powrót Przedwiecznego. Mandy, uzbrojona w swą wiedzę o przepowiedni, wymknęła się chyłkiem na noc. Postanowiła rzucić wyzwanie przeznaczeniu i powstrzymać nadchodzące wydarzenia."
+   ],
+   "startingPosition": "Biblioteka",
+   "equipment": ["6$", "4 żetony Wskazówek"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Przedmiot unikatowy", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Badania",
+         "description": "<b>Dowolna faza:</b> Mandy może aktywować swoją zdolność raz na turę, kiedy któryś z Badaczy (w tym ona) wykona test umiejętności. Badacz może przerzucić wszystkie kości, na których nie uzyskał sukcesu."
+      }
+   ],
+   "sanity": 5,
+   "endurance": 5,
+   "speed": [1, 2, 3, 4],
+   "sneak": [5, 4, 3, 2],
+   "prowess": [0, 1, 2, 3],
+   "will": [5, 4, 3, 2],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [3, 2, 1, 0],
+   "concentration": 2
+}

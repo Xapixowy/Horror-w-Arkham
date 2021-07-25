@@ -1,0 +1,29 @@
+{
+   "expansion": false,
+   "name": "Siostra Mary",
+   "profession": "Zakonnica",
+   "photo": "./img/characters/siostraMary.jpeg",
+   "lore": [
+      "Siostra Mary służyła Kościołowi oddanie przez wiele lat. Kiedy została wysłana do Arkham, aby pracować u boku Ojca Michaela, człowieka, którego pisma podziwiała od tak wielu lat, poczyła, że dostąpiła łaski. Teraz, kiedy widziała już jego dziwne wahania nastrojów i niektóre z kuriozalnych praktyk, do których dochodzi w miasteczku, zaczyna się zastanawiać, czy nie osądziła sytuacji zbyt pochopnie...",
+      "Na przykład zeszłej nocy ktoś zapukał do drzwi kościoła - kiedy otworzyła, nie była tam nikogo - na ganku znalazła tylko odręcznie zapisany dziennik. Zapiski opisywały dziwaczne kulty i straszliwe istoty, które czają się w ciemnościach. Co gorsze, kiedy śmiejąc się pokazała dziennik Ojcu Michaelowi, ten zbladł i wrzucił go czym prędzej do ognia, krzycząc, by zapomniała o tym, co widziała.",
+      "W tej chwili Siostra Mary zbiera swój dobytek i po cichu opuszcza Południowy Kościół. Postanowiła zbadać zagadki miasteczka i tym samym umocnić swą wiarę."
+   ],
+   "startingPosition": "Południowy Kościół",
+   "equipment": ["0$", "Błogosławieństwo", "1 Przedmiot powszechny (Krzyż), 1 Przedmiot unikatowy (Woda święcona)"],
+   "randomEquipment": ["1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Anioł stróż",
+         "description": "<b>Dowolna faza:</b> Siostra Mary nigdy nie może <i>zagubić się w czasie i przestrzeni</i>. Zamiast tego, jeśli jej Poczytalność wynosi 0, trafia do <b><i>Przytułku w Arkham</i></b>. Jeśli jej Wytrzymałość wynosi 0, trafia do <b><i>Szpitala Św. Marii</i></b>. Jeśli ani jej Poczytalność, ani Wytrzymałość nie wynosi 0, trafia do <b><i>Południowego Kościoła</i></b>."
+      }
+   ],
+   "sanity": 7,
+   "endurance": 3,
+   "speed": [1, 2, 3, 4],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [0, 1, 2, 3],
+   "will": [4, 3, 2, 1],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [6, 5, 4, 3],
+   "concentration": 1
+}

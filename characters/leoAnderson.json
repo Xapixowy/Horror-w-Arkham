@@ -1,0 +1,29 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Leo Anderson",
+   "profession": "Dowódca ekspedycji",
+   "photo": "./img/characters/leoAnderson.jpeg",
+   "lore": [
+      "Anderson zabrał ze sobą na Jukatan siedmu ludzi. Dwóch wróciło - mniej więcej. Tak naprawdę z życiem z dżungli powróciło trzech ludzi, ale Mitch Brown nie był już sobą. Prawdę mówiąc, zamienił się w mamroczącego szaleńca i odesłano go już do przytułku.",
+      "Leo nie potrafił przeczytać tabliczek, które odnaleźli w tych ruinach - z ich siedmiu potrafił to tylko dr Volk - ale teraz trzyma notatki dobrego doktora w dłoni. Te, które Volk sporządził, zanim stracił rozum. Zanim zabił dwóch ludzi Andersona.",
+      "Dziś Anderson zszedł ze statku w dokach Arkham. Usłyszał, że dr Philips, mężczyzna, który zorganizował ekspedycję na Jukatan, nie żyje. Philips nie żyje, a to oznacza, że Anderson trzyma teraz w dłoni zapiski morderczego szaleństwa - zapiski, w których dzisiejsza data jest zakreślona krwawym kółkiem."
+   ],
+   "startingPosition": "Rzeczne doki",
+   "equipment": ["5$", "2 żetony Wskazówek"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Sprzymierzeniec", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Zdolności przywódcze",
+         "description": "<b>Dowolna faza:</b> Raz na turę Leo może zapobiec utracie 1 punktu Wytrzymałości lub Poczytalności przez dowolnego Badacza."
+      }
+   ],
+   "sanity": 5,
+   "endurance": 5,
+   "speed": [1, 2, 3, 4],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [1, 2, 3, 4],
+   "will": [4, 3, 2, 1],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [4, 3, 2, 1],
+   "concentration": 2
+}

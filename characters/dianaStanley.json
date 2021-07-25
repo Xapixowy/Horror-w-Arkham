@@ -1,0 +1,32 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Diana Stanley",
+   "profession": "Nawrócona kultystka",
+   "photo": "./img/characters/dianaStanley.jpeg",
+   "lore": [
+      "Diana Stnaley przeprowadziła się do Arkham dwa lata temu. Będąc właścicielką małego sklepiku z damską odzieżą, chciała jak najszybciej zintegrować się z tutejszą społecznością. Przyłączyła się więc do Izby Handlu, Ligi Kobiet i Stowarzyszenia Historycznego. Jej wysiłki się opłaciły, biznes kwitł i już po kilku miesiącach Carl Sanford zaprosił ją do wielce elitarnego klubu Arkham - Loży Srebrnego Świtu.",
+      "Jej początkowy zachwyt zaproszeniem zamienił się w przerażenie. Od czasu, kiedy osiągnęła drugi stopień Zakonu, cotygodniowe spotkania stawały się coraz bardziej niepokojące. Sny zaczęły nawiedzać koszmarne byty. W zeszłym tygodniu Diana była świadkiem przywołania piekielnego stworzenia i poznała zamiary Sanforda: obudzić istotę nazywaną Przedwiecznym. To w tamtej chwili Diana postanowiła opuścić Zakon, ale i pokrzyżować im plany. Zdaje sobie sprawę, że kiedy tylko Loża zda sobie sprawę z tego, co robi, przyjdą po nią, ale wie też, że to jej jedyna szansa na odkupienie, więc podejmie ją, bez względu na koszty."
+   ],
+   "startingPosition": "Sklep Wielobranżowy",
+   "equipment": ["4$", "2 żetony Wskazówek", "1 karta Specjalna (Członkostwo w Loży Srebrnego Świtu)"],
+   "randomEquipment": ["1 Przedmiot powszechny", "1 Umiejętność", "1 Zaklęcie"],
+   "skills": [
+      {
+         "name": "Zaufana siostra",
+         "description": "<b>Dowolna faza:</b> Nie możesz stracić swojego Członkostwa w Loży Srebrnego Świtu."
+      },
+      {
+         "name": "Mroczny wgląd",
+         "description": "<b>Dowolna faza:</b> Odzyskujesz 1 punkt Poczytalności lub Wytrzymałości za każdym razem, kiedy na torze zagłady Przedwiecznego zostanie umieszczony żeton zagłady. Dodatkowo, otrzymujesz 1 żeton Wskazówki za każdym razem, kiedy poziom paniki wzrasta."
+      }
+   ],
+   "sanity": 4,
+   "endurance": 6,
+   "speed": [0, 1, 2, 3],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [1, 2, 3, 4],
+   "will": [4, 3, 2, 1],
+   "knowledge": [3, 4, 5, 6],
+   "luck": [4, 3, 2, 1],
+   "concentration": 1
+}

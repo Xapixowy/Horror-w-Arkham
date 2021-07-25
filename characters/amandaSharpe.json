@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Amanda Sharpe",
+   "profession": "Studentka",
+   "photo": "./img/characters/amandaSharpe.jpeg",
+   "lore": [
+      "Amanda już od dwóch lat studiuje na Uniwersytecie Miskatonic. Pewnego dnia, kiedy szła na spotkanie z profesorem, zauważyła obraz wiszący w korytarzu. Jej uwagę przykuła niewyraźna wizja jakiejś straszliwej istoty wyłaniającej się z oceanu. Od tamtego momentu, za każdym razem, kiedy Amanda pozwalała sobie na utratę skupienia, słyszy dziwne szepty w obcym języku. Jeszcze bardziej niepokojący jest fakt, że ostatnio zaczęła śnić o przepastnych zielonych otchłaniach oceanu i straszliwych obcych miastach, które spoczywają w najmroczniejszych głębinach.",
+      "Tego wieczora, kiedy kończy swoją zmianę jako kasjerka w Pierwszym Banku Arkham, coś ją przyzywa - coś mrocznego i straszliwego, co pozostawia w jej umyśle ślad morskiej piany i sprawia, że Amanda z trudnością łapie powietrze próbując mu się przeciwstawić. Opierając się o ceglaną ścianę banku Amanda zdaje sobie sprawę, że musi się dowiedzieć, co się z nią dzieje albo padnie ofiarą obcej świadomości, która wdziera się do jej umysłu."
+   ],
+   "startingPosition": "Bank Arkham",
+   "equipment": ["1$", "1 żeton Wskazówki"],
+   "randomEquipment": ["1 Przedmiot powszechny", "1 Przedmiot unikatowy", "2 Umiejętności", "1 Zaklęcie"],
+   "skills": [
+      {
+         "name": "Pilna",
+         "description": "<b>Dowolna faza:</b> Za każdym razem, kiedy Amanda losuje jedną lub więcej kart z talii <b>Umiejętności</b>, dobiera o jedną kartę więcej, a następnie odrzuca jedną z nich."
+      }
+   ],
+   "sanity": 5,
+   "endurance": 5,
+   "speed": [1, 2, 3, 4],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [1, 2, 3, 4],
+   "will": [4, 3, 2, 1],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [4, 3, 2, 1],
+   "concentration": 3
+}

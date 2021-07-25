@@ -1,0 +1,29 @@
+{
+   "expansion": false,
+   "name": "Joe Diamond",
+   "profession": "Prywatny detektyw",
+   "photo": "./img/characters/joeDiamond.jpeg",
+   "lore": [
+      "Robota wydawała się prosta - odebrać statuetkę w Muzeum Providence i dostarczyć ją facetowi z Loży Srebrengo Świtu. Płaca była dobra, a paniusia, która zleciła mu robotę, wydawała się szczera.",
+      "Niestety, dla Joe'ego nic nigdy nie układa się tak łatwo. Statuetka zaginęła, dwoje ludzi nie żyje, kultyści depczą mu po piętach, a wszystkie ślady prowadzą do Arkham. Fortuna bywa przewrotna.",
+      "Próbował porozmawiać z Szeryfem, ale glina okazał się mniej niż bezużyteczny. Wygląda na to, że rozwiązanie sprawy znów spoczywa w rękach Joe'ego Diamonda."
+   ],
+   "startingPosition": "Posterunek Policji",
+   "equipment": ["8$", "3 żetony Wskazówek", "1 Przedmiot powszechny (Automatyczna .45)"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Przeczucia",
+         "description": "<b>Dowolna faza:</b> Kiedy wydaje żeton Wskazówki, aby wspomóc rzut, Joe rzuca jeszcze jedną, dodatkową kością."
+      }
+   ],
+   "sanity": 4,
+   "endurance": 6,
+   "speed": [3, 4, 5, 6],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [2, 3, 4, 5],
+   "will": [3, 2, 1, 0],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [3, 2, 1, 0],
+   "concentration": 3
+}

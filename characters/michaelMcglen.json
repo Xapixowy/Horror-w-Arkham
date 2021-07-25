@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Michael Mcglen",
+   "profession": "Gangster",
+   "photo": "./img/characters/michaelMcglen.jpeg",
+   "lore": [
+      "Kiedy Michael był zbirem w gangu O'Banniona, nigdy tak naprawdę nie wierzył w to całe hokus-pokus o voodoo, o którym słyszał na mieście. A przynajmniej nie do czasu roboty Foremana - na własne oczy widział jak krzyczący Szybki Louie Farrell został wciągnięty do rzeki przez oślizgłą, zieloną kreaturę. Jak to mówią - zobaczyć, znaczy uwierzyć - i Michael właśnie zaczyna wierzyć.",
+      "Zgromadził cały swój dobytek w pokoju, który wynajmuje w Pensjonacie Mamuśki. Louie był jego przyjacielem. Michael nie spocznie, dopóki nie dowie się, co dzieje się w tym miasteczku i nie pomści swojego kumpla..."
+   ],
+   "startingPosition": "Pensjonat Mamuśki",
+   "equipment": ["8$", "2 Przedmioty powszechne (Dynamit, Thompson)"],
+   "randomEquipment": ["1 Przedmiot unikatowy", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Silne ciało",
+         "description": "<b>Dowolna faza:</b> Michael zmniejsza wszystkie otrzymane straty Wytrzymałości o 1 (do minimum 0)."
+      }
+   ],
+   "sanity": 3,
+   "endurance": 7,
+   "speed": [2, 3, 4, 5],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [3, 4, 5, 6],
+   "will": [4, 3, 2, 1],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [3, 2, 1, 0],
+   "concentration": 1
+}

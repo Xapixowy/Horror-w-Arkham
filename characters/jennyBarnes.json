@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Jenny Barnes",
+   "profession": "Dyletantka",
+   "photo": "./img/characters/jennyBarnes.jpeg",
+   "lore": [
+      "Kilka miesięcy temu, kiedy Jenny była na wycieczce w Paryżu, otrzymała list od swojej siostry, Isabelle. List był napisany bez ładu i składu. Isabelle opisywała mężczyzn w czarnych płaszczach, którzy śledzili jej każdy krok. Pisała również o odciskach kopyt w lesie, pozostawionych przez gigantyczną kozę. Koperta była częściowo poplamiona krwią. List nadano w Arkham. To była ostatnia wiadomość, którą Jenny dostała od siostry.",
+      "Jenny powróciła do Stanów i przybyła do Arkham, a by odszukać Isabelle. Wysiadła z pociągu z Bostonu i wkroczyła w ciemną, jesienną noc, wierząc, że jej siostrę porwał jakiś dziwny kult. Jenny jest zdeterminowana odnaleźć Isabelle i pokrzyżować plany tych, którzy ją uprowadzili... nawet, jeśli będzie musiała ocalić przy tej okazji całe Arkham."
+   ],
+   "startingPosition": "Dworzec",
+   "equipment": ["10$"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Przedmiot unikatowy", "1 Umiejętność", "1 Zaklęcie"],
+   "skills": [
+      {
+         "name": "Konto oszczędnościowe",
+         "description": "<b>Utrzymanie:</b> Jenny otrzymuje 1$."
+      }
+   ],
+   "sanity": 6,
+   "endurance": 4,
+   "speed": [0, 1, 2, 3],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [1, 2, 3, 4],
+   "will": [5, 4, 3, 2],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [5, 4, 3, 2],
+   "concentration": 1
+}

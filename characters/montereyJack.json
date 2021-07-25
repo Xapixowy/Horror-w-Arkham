@@ -1,0 +1,29 @@
+{
+   "expansion": false,
+   "name": "Monterey Jack",
+   "profession": "Archeolog",
+   "photo": "./img/characters/montereyJack.jpeg",
+   "lore": [
+      "Monterey już od lat jest podróżującym po świecie awanturnikiem i poszukiwaczem skarbów. Idąc w ślady ojca, zawsze stara się zabezpieczyć wartość naukową swoich znalezisk. Ostatnio podążył do Arkham tropem dziwacznego, pradawnego posążka. Kiedy przybył do miasteczka okazało się, że mężczyzna, który miał mu go sprzedać, został zamknięty w przytułku. Monterey miał już zamiar dać sobie spokój i ze zrezygnowaniem wrócić do domu, kiedy obok niego przepchnęła się jakaś zakapturzona postać.",
+      "Przez moment Monterey dostrzegł blask srebrnego wisiorka z symbolem, którego nigdy by nie zapomniał. Taki sam symbol wyryto na czole jego zamordowanego ojca i to on nawiedzał przez lata jego sny. Monterey pognał za tajemniczą postacią, ale kiedy skręcił za róg zdał sobie sprawę, że ją zgubił.",
+      "Monterey wie jednak, że gdzieś w Arkham znajduje się wyjaśnienie tajemnicy śmierci jego ojca. Nie opuści miasteczka, póki go nie pozna."
+   ],
+   "startingPosition": "Antykwariat",
+   "equipment": ["7$", "1 żeton Wskazówki", "2 Przedmioty powszechne (Bicz, Rewolwer .38)"],
+   "randomEquipment": ["2 Przedmioty unikatowe", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Archeologia",
+         "description": "<b>Dowolna faza:</b> Za każdym razem, kiedy Monterey losuje jedną lub więcej kart z talii <b>Przedmiotów unikatowych</b>, dobiera o jedną kartę więcej, a następnie odrzuca jedną z nich."
+      }
+   ],
+   "sanity": 3,
+   "endurance": 7,
+   "speed": [1, 2, 3, 4],
+   "sneak": [3, 2, 1, 0],
+   "prowess": [2, 3, 4, 5],
+   "will": [3, 2, 1, 0],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [5, 4, 3, 2],
+   "concentration": 2
+}

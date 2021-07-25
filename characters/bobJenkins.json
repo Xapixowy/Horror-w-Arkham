@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Bob Jenkins",
+   "profession": "Domokrążca",
+   "photo": "./img/characters/bobJenkins.jpeg",
+   "lore": [
+      "Będąc domokrążcą, Bob jest zawsze w ruchu. Wczoraj jednak zobaczył coś, co zmusiło go do zrezygnowania z podróży i pozostania w Arkham. Kiedy sprzedawał swoje towary w sklepie wielobranżowym, dostrzegł zakapturzonego mężczyznę, który kupił kilka przedmiotów, płacąc starymi, złotymi monetami. Oniemiały, Bob zwrócił się o wyjaśnienie do sprzedawcy, ale mężczyzna zignorował jego pytania, mówiąc &#34To się czasem zdarza&#34.",
+      "Bob nie opuści Arkham, dopóki nie dowie się skąd pochodzą złote monety. Jeśli dobrze wszystko rozegra, to będzie interes jego życia. Może będzie mógł wreszcie rzucić pracę, kupić sobie tę łódź, którą ma na oku i przez resztę swoich dni łowić ryby w tropikach. Z drugiej strony, być może Bob zda sobie wreszcie sprawę, że nie wszystko złoto, co się świeci."
+   ],
+   "startingPosition": "Sklep wielobranżowy",
+   "equipment": ["9$"],
+   "randomEquipment": ["2 Przedmioty powszechne", "2 Przedmioty unikatowe", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Obrotny sprzedawca",
+         "description": "<b>Dowolna faza:</b> Za każdym razem, kiedy Bob losuje jedną lub więcej kart z talii <b>Przedmiotów powszechnych</b>, dobiera o jedną kartę więcej, a następnie odrzuca jedną z nich."
+      }
+   ],
+   "sanity": 4,
+   "endurance": 6,
+   "speed": [2, 3, 4, 5],
+   "sneak": [3, 2, 1, 0],
+   "prowess": [1, 2, 3, 4],
+   "will": [6, 5, 4, 3],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [4, 3, 2, 1],
+   "concentration": 1
+}

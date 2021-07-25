@@ -1,0 +1,33 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Marie Lambeau",
+   "profession": "Piosenkarka",
+   "photo": "./img/characters/marieLambeau.jpeg",
+   "lore": [
+      "Marie Lambeau zawsze posiada głos, za który warto by oddać życie. Nazywali ją &#34Mglistym Aksamitem.&#34 Mówili, że urodziła się tylko po to, aby śpiewać jazz, że posiada to magiczne &#34coś&#34 - i może mieli rację.",
+      "Pewnego razu Marie usłyszała o mężczyźnie, który potrafił zmusić umarłych do tańca brzmieniem swojej trąbki. Ona nigdy tego nie potrafiła - jej zaklęty głoś nie działał w ten sposób. Ale podoba im się, gdy go słyszą, i ona im się podoba, a to jej w zupełności wystarcza.",
+      "Niedawno zmarła <i>grande-mère</i> Marie. Czemu starsza pani przeporawdziła się z Nowego Orleanu do Arkham, tego Marie nie wiedziała. Nigdy nie poświęcała zbyt wiele uwagi opowieściom, które ludzie snuli o jej babce. Uważała, że są po prostu zazdrośni. Dziś jednak Marie siedzi w Pensjonacie Mamuśki, trzymając nóż babki, i słyszy, jak ostrze śpiewa mglistym, aksamitnym głosem..."
+   ],
+   "startingPosition": "Pensjonat Mamuśki",
+   "equipment": ["4$", "2 żetony Wskazówek", "1 Przedmiot unikatowy (Zaklęty Sztylet)", "1 Zaklęcie (Głos Ra)"],
+   "randomEquipment": ["1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Wiedźmowa krew",
+         "description": "<b>Utrzymanie:</b> Raz w trakcie całej gry, na początku swojej tury, Marie może usunąć 1 żeton zagłady z toru zagłady Przedwiecznego."
+      },
+      {
+         "name": "Trzecie oko",
+         "description": "<b>Dowolna faza:</b> Marie posiada &#34trzecią dłoń&#34. Może jej używać jedynie do rzucania Zaklęć."
+      }
+   ],
+   "sanity": 6,
+   "endurance": 4,
+   "speed": [1, 2, 3, 4],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [0, 1, 2, 3],
+   "will": [5, 4, 3, 2],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [4, 3, 2, 1],
+   "concentration": 2
+}

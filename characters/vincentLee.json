@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Vincent Lee",
+   "profession": "Doktor",
+   "photo": "./img/characters/vincentLee.jpeg",
+   "lore": [
+      "Vincent, absolwent wydziału Medycyny Uniwersytetu Yale, przeprowadził się tu niedawno z Bostonu, aby pracować w Szpitalu Św. Marii. Od czasu przybycia do Arkham widział zbyt wiele straszliwych i niewyjaśnionych zgonów - staruszek rozerwany na strzępy przez niezidentyfikowane dzikie zwierzęta, zdrowy, młody mężczyzna, którego serce eksplodowało, i tak wiele innych. Ich twarze nawiedzają jego sny, zwłaszcza przerażone oblicze tamtego młodego mężczyzny. Po tym wszystkim co widział, trudno się dziwić, że Vincent podejrzewa, że w tym spokojnym miasteczku w Massachusetts dzieje się coś straszliwego.",
+      "Dziś wieczorem Dr Lee podjął decyzję. Pozna tajemnice Arkham i położy kres dziwacznym zgonom. Jest zdecydowany dotrwać do końca, nawet gdyby w wyniku swojego śledztwa to on miał się stać zagadką dla następnego lekarza, który przybędzie do Arkham."
+   ],
+   "startingPosition": "Szpital Św. Marii",
+   "equipment": ["9$", "1 żeton Wskazówki"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Lekarz",
+         "description": "<b>Utrzymanie:</b> Dr Lee może przywrócić 1 punkt Wytrzymałości sobie albo innej postaci na tym samym polu. Dr Lee nie może podnieść Wytrzymałości postaci ponad jej maksymalny poziom."
+      }
+   ],
+   "sanity": 5,
+   "endurance": 5,
+   "speed": [0, 1, 2, 3],
+   "sneak": [5, 4, 3, 2],
+   "prowess": [0, 1, 2, 3],
+   "will": [4, 3, 2, 1],
+   "knowledge": [2, 3, 4, 5],
+   "luck": [4, 3, 2, 1],
+   "concentration": 2
+}

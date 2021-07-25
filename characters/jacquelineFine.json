@@ -1,0 +1,28 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Jacqueline Fine",
+   "profession": "Medium",
+   "photo": "./img/characters/jacquelineFine.jpeg",
+   "lore": [
+      "Co noc Jacqueline widzi przyszłość. Jej sny wypełniają zdarzenia, do których jeszcze nie doszło - zazwyczaj straszliwe wizje krwi i ognia. Tym razem jest nie inaczej. Wyśniła miasteczko o nazwie Arkham. Spokojnie, ciche miasteczko, które w przededniu straszliwej katastrofy zwiastującej dla świata tysiące lat nieopisanego chaosu, zostanie zniszczone przez potworną istotę. Do tej pory jej sny zawsze się sprawdzały.",
+      "Jacqueline nie potrafi zignorować tej ostatniej wizji. Odszukała skazane na zagładę miasteczko i przybyła do niego, aby powstrzymać gehennę, która ma nastąpić. Przyzwana do obrazu z najczarniejszych snów, bierze głęboki oddech i wchodzi do Antykwariatu - do miejscu, które w niedługim czasie stanie się żywym koszmarem."
+   ],
+   "startingPosition": "Antykwariat",
+   "equipment": ["7$", "2 żetony Wskazówek", "1 Przedmiot unikatowy (Zaklęta Biżuteria)"],
+   "randomEquipment": ["1 Przedmiot powszechny", "1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Prekognicja",
+         "description": "<b>Mity:</b> Raz na turę, kiedy zostanie wylosowana karta Mitów inna niż &#34Historia toczy się dalej...&#34 Jacqueline może wydać 2 żetony Wskazówek, aby odrzucić tę kartę bez rozpatrywania jej efektu i w jej miejsce wylosować nową kartę. Następnie druga karta Mitów wywiera swój efekt."
+      }
+   ],
+   "sanity": 7,
+   "endurance": 3,
+   "speed": [1, 2, 3, 4],
+   "sneak": [3, 2, 1, 0],
+   "prowess": [1, 2, 3, 4],
+   "will": [4, 3, 2, 1],
+   "knowledge": [2, 3, 4, 5],
+   "luck": [4, 3, 2, 1],
+   "concentration": 2
+}

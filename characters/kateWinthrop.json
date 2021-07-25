@@ -1,0 +1,29 @@
+{
+   "expansion": false,
+   "name": "Kate Winthrop",
+   "profession": "Naukowiec",
+   "photo": "./img/characters/kateWinthrop.jpeg",
+   "lore": [
+      "Kate Winthrop, genialny naukowiec, ale nieśmiała i samotna osoba, pracuje dla Laboratoriów Badawczych Miskatonic już od 4 lat, a jej zwierzchnik nadal nie zna jej imienia. Dla Kate nie ma to znaczenia - przez większość czasu i tak pracuje nad prywatnym projektem. Prawie 3 lata temu widziała, jak jedno z urządzeń zostało uszkodzone, a jej długoletni mentor i przyjaciel, Profesor Young, został rozdarty na strzępy przez bezkształtne stworzenie, które zawyło i uciekło w mroki nocy. Od tamtej chwili poświęciła się mrocznym badaniom, mając nadzieję, że odkryje coś, co pozwoliłoby jej odnaleźć i zniszczyć potwora, i resztę jego rodzaju.",
+      "Dziś w nocy jej badania wreszcie się opłaciły. Skonstruowała urządzenie zdolne pokonać obce byty, które wykryła w Arkham!"
+   ],
+   "startingPosition": "Budynek naukowy",
+   "equipment": ["7$", "<span class='postscriptum'>2 żetony Wskazówek*</span>"],
+   "randomEquipment": ["1 Przedmiot powszechny", "1 Przedmiot unikatowy", "1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Nauka!",
+         "description": "<b>Dowolna faza:</b> Na obszarze na którym znajduje się Kate, nigdy nie mogą pojawiać się brawy i potwory - to zasługa jej stabilizatora przepływu. Potwory i bramy nie znikają jednak, kiedy Kate wkroczy na ich obszar, potwory mogą też wkroczyć na obszar, który zajmuje Kate.",
+         "postscriptum": "* Na początku gry nie należy umieszczać żetonu Wskazówki na obszarze Budynku naukowego."
+      }
+   ],
+   "sanity": 6,
+   "endurance": 4,
+   "speed": [1, 2, 3, 4],
+   "sneak": [5, 4, 3, 2],
+   "prowess": [1, 2, 3, 4],
+   "will": [3, 2, 1, 0],
+   "knowledge": [2, 3, 4, 5],
+   "luck": [4, 3, 2, 1],
+   "concentration": 1
+}

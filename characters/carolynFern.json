@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Carolyn Fern",
+   "profession": "Psycholog",
+   "photo": "./img/characters/carolynFern.jpeg",
+   "lore": [
+      "Carolyn jest stażystką pierwszego roku w sanatorium w Providence. Przez ostatnie sześć miesięcy przy pomocy hipnozy badała sny swych pacjentów. Jeden z pacjentów podawał szczególnie żywe i niepokojące opisy swoich snów - do czasu, aż nie został zamordowany dziwnym nożem, który bardzo przypominał coś, co opisał w jednym ze swoich koszmarów.",
+      "Wstrząśnięta i przerażona morderstwem, Carolyn zaczęła przeglądać swoje notatki, często wertując je do późnych godzin nocnych. Wreszcie znalazła subtelne wskazówki, które doprowadziły ją do Przytułku w Arkham, gdzie jej pacjent był wcześniej hospitalizowany. Ktoś tutaj musi wiedzieć, czemu niegroźny mężczyzna został zamordowany za opisywanie psychologowi swoich snów."
+   ],
+   "startingPosition": "Przytułek w Arkham",
+   "equipment": ["7$", "1 żeton Wskazówki"],
+   "randomEquipment": ["2 Przedmioty powszechne", "2 Przedmioty unikatowe", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Psychologia",
+         "description": "<b>Utrzymanie:</b> Dr Fern może przywrócić 1 punkt Poczytalności sobie albo innej postaci na tym samym polu. Dr Fern nie może podnieść Poczytalności postaci ponad jej maksymalny poziom."
+      }
+   ],
+   "sanity": 6,
+   "endurance": 4,
+   "speed": [0, 1, 2, 3],
+   "sneak": [3, 2, 1, 0],
+   "prowess": [1, 2, 3, 4],
+   "will": [4, 3, 2, 1],
+   "knowledge": [2, 3, 4, 5],
+   "luck": [5, 4, 3, 2],
+   "concentration": 2
+}

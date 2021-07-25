@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Darrell Simmons",
+   "profession": "Fotograf",
+   "photo": "./img/characters/darrellSimmons.jpeg",
+   "lore": [
+      "Nawet kiedy był młodszy, Darrell wiedział, że z tym małym, dziwnym miasteczkiem jest coś nie tak. Po ukończeniu liceum rozpoczął pracę w Arkham Advertiser jako fotograf. Od tamtego czasu, przez lata pracy, poznał miasteczko jak własną kieszeń.",
+      "Ostatniej nocy Darrell zobaczył coś straszliwego - coś, co dogłębnie wstrząsnęło jego światem i zniszczyło iluzję bezpieczeństwa, którą każdy z nas krzewi w sobie, aby chronić swój umysł i duszę. Jego redaktor twierdzi, że coś mu się przewidziało, ale kiedy Darrell opuszcza budynek gazety, jest pewien tego co widział i zamierza to pokazać światu! Tym razem będzie bardziej ostrożny. Tym razem zrobi zdjęcia i udowodni, że w Arkham dzieje się coś nienormalnego."
+   ],
+   "startingPosition": "Redakcja",
+   "equipment": ["4$", "1 żeton Wskazówki", "1 karta Specjalna (Honorarium)"],
+   "randomEquipment": ["1 Przedmiot powszechny", "2 Przedmioty unikatowe", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Tutejszy",
+         "description": "<b>Spotkanie w miasteczku:</b> Kiedy losuje kartę obszaru Arkham, Darrell dobiera 2 karty i wybiera, którą z nich chce rozegrać. Ta zdolność nie działa podczas spotkań w Innych Światach."
+      }
+   ],
+   "sanity": 4,
+   "endurance": 6,
+   "speed": [2, 3, 4, 5],
+   "sneak": [3, 2, 1, 0],
+   "prowess": [2, 3, 4, 5],
+   "will": [4, 3, 2, 1],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [4, 3, 2, 1],
+   "concentration": 2
+}

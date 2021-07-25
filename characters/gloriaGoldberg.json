@@ -1,0 +1,29 @@
+{
+   "expansion": false,
+   "name": "Gloria Goldberg",
+   "profession": "Pisarka",
+   "photo": "./img/characters/gloriaGoldberg.jpeg",
+   "lore": [
+      "Gdy Gloria była jeszcze małą dziewczynką, nawiedzały ją straszliwe wizje. Po latach wizyt u przeróżnych lekarzy i odbytych terapiach, nauczyła się nieco kontrolować swoje objawienia przelewając je na karty swych opowiadań. Jej dziwaczne i niepokojące utwory przemówiły do zaniepokojonych znamieniem czasów mas i uczyniły z niej bestsellerową pisarkę.",
+      "Tego wieczoru, kiedy opuszczała spotkanie z czytelnikami, które prowadziła w Arkham, została obalona na ziemię przez najpotężniejszą wizję jaką kiedykolwiek miała. Gloria zobaczyła, jak niebo ulega rozdarciu, a z samego powietrza zaczyna wylewać się olbrzymia, potworna postać. Istota zaczęła siać niewypowiedziany chaos, zabijając przy tym tysiące postronnych. Kiedy Gloria siadła na ziemi, z rękoma oplecionymi wokół ciała, zrozumiała, że ta wizja się spełni, jeśli ona czegoś z tym nie zrobi.",
+      "Obecnie siedzi w obskurnej restauracji, popijając kawę i starając się zdecydować, co robić dalej."
+   ],
+   "startingPosition": "Restauracja Velmy",
+   "equipment": ["7$", "2 żetony Wskazówek"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Psychiczna wrażliwość",
+         "description": "Spotkania w Innych Światach: Kiedy losuje kartę bramy, Gloria dobiera 2 karty koloru odpowiadającego symbolom Innego Świata, w którym przebywa i wybiera, którą z nich chce rozegrać. Ta zdolność nie działa podczas spotkań w Arkham."
+      }
+   ],
+   "sanity": 6,
+   "endurance": 4,
+   "speed": [1, 2, 3, 4],
+   "sneak": [3, 2, 1, 0],
+   "prowess": [0, 1, 2, 3],
+   "will": [5, 4, 3, 2],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [5, 4, 3, 2],
+   "concentration": 2
+}

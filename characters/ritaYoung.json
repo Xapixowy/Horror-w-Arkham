@@ -1,0 +1,29 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Rita Young",
+   "profession": "Atletka",
+   "photo": "./img/characters/ritaYoung.jpeg",
+   "lore": [
+      "Dorastając na Południu, Rita każdego dnia musiała walczyć z dyskryminacją tego czy innego rodzaju. Pochodziła z biednej rodziny, a jednak ciężką pracą wywalczyła sobie stypendium na Uniwersytecie Miskatonic, gdzie dołączyła do drużyny lekkoatletycznej. Teraz, być może, będzie musiała walczyć o życie.",
+      "Ktoś ją prześladuje. Tego jest pewna. Nie ma pojęcia kto i czemu, ale w jej akademiku kręciło się kilku dziwnych mężczyzn. W zeszłym tygodniu jej współlokatorka została zaatakowana - tego samego wieczoru, kiedy założyła kurtkę Rity. Ktoś musiał je pomylić.",
+      "Dzisiaj Rita spędziła kilka godzin próbując przekonać policję, aby wreszcie coś zrobiła. Szeryf oznajmił jej, że ma związane ręce. Nie ma dowodów - nie ma sprawy. Ucieczka byłaby najlepszym sposobem uniknięcia tego widma śmierci, które nad nią zawisło, ale to nie w stylu Rity. Jej prześladowcy mogą być członkami Ku Klux Klanu albo jeszcze bardziej złowieszczej organizacji, to nie ma znaczenia. Wyjdzie im naprzeciw, tak jak mierzyła się ze światem przez całe swoje życie."
+   ],
+   "startingPosition": "Posterunek Policji",
+   "equipment": ["4$", "2 żetony Wskazówek", "1 karta Specjalna (Honorarium)"],
+   "randomEquipment": ["2 Przedmioty powszechne", "1 Przedmiot unikatowy", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Wytrwała",
+         "description": "<b>Dowolna faza:</b> Kiedy losuje jedną lub więcej kart Ran lub Szaleństwa dobiera dodatkową kartę, a następnie odrzuca jedną z nich, zatrzymując pozostałe. Dodatkowo, jeśli Rita otrzyma duplikat posiadanej już karty Rany lub Szaleństwa, druga karta nie wywiera żadnego efektu."
+      }
+   ],
+   "sanity": 4,
+   "endurance": 6,
+   "speed": [3, 4, 5, 6],
+   "sneak": [4, 3, 2, 1],
+   "prowess": [2, 3, 4, 5],
+   "will": [4, 3, 2, 1],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [3, 2, 1, 0],
+   "concentration": 2
+}

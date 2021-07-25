@@ -1,0 +1,32 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Wilson Richards",
+   "profession": "Złota rączka",
+   "photo": "./img/characters/wilsonRichards.jpeg",
+   "lore": [
+      "Na trasie widzisz mnóstwo różnych rzeczy, a Wilson podróżuje od lat. Włóczy się od miasta do miasta, zarabia chwytając się dorywczych prac - ale nigdy nie był świadkiem wydarzeń, do których dochodzi w Arkham.",
+      "Coś tu jest nie tak. Samotnik i włóczęga rozwija w sobie szósty zmysł, umie oceniać ludzi i miejsca. Teraz szósty zmysł radzi Wilsonowi uciekać z miasta. Szybko. Ale z jakiegoś powodu ciekawość jest silniejsza od strachu. Ma przeczucie, że robota, którą ma do wykonania w Arkham, może się okazać odrobinę poważniejsza od naprawy schodów albo malowania ogrodzenia."
+   ],
+   "startingPosition": "Dworzec",
+   "equipment": ["4$", "3 Przedmioty powszechne (Motocykl, Dubeltówka, Whiskey)"],
+   "randomEquipment": ["2 Przedmioty unikatowe", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Wszechstronny",
+         "description": "<b>Utrzymanie:</b> Skupienie Wilsona jest nieograniczone."
+      },
+      {
+         "name": "Prace dorywcze",
+         "description": "<b>Spotkania w Arkham:</b> Zamiast odbywać spotkanie na danym obszarze (ale nie na ulicach lub w Innym Świecie), Wilson może otrzymać 1$."
+      }
+   ],
+   "sanity": 5,
+   "endurance": 5,
+   "speed": [1, 2, 3, 4],
+   "sneak": [5, 4, 3, 2],
+   "prowess": [1, 2, 3, 4],
+   "will": [3, 2, 1, 0],
+   "knowledge": [1, 2, 3, 4],
+   "luck": [4, 3, 2, 1],
+   "concentration": "∞"
+}

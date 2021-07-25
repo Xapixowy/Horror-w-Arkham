@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Harvey Walters",
+   "profession": "Profesor",
+   "photo": "./img/characters/harveyWalters.jpeg",
+   "lore": [
+      "Harvey jest na Uniwersytecie Miskatonic profesorem wizytującym. Posiada doktoraty z historii i archeologii, a przez lata udało mu się odkryć kilka arcyciekawych artefaktów i liznąć nieco mistycznych sztuk. Ostatnimi czasy Harvey dokładnie studiował gazety i rozmawiał z ludźmi z ulicy. Zaczął sobie zdawać sprawę z niepokojów, które trawią miasto. Oznak mogących potencjalnie zwiastować nadejście czegoś niewyobrażalnego spoza czasu i przestrzeni.",
+      "Profesor Walters sprawdza swoje notatki i przygotowuje się do ostatniej wycieczki na ulice Arkham. Zamierza sprawdzić swoją teorię. Jeśli ma rację, może to oznaczać koniec wszystkiego."
+   ],
+   "startingPosition": "Budynek administracji",
+   "equipment": ["5$", "1 żeton Wskazówki"],
+   "randomEquipment": ["2 Przedmioty unikatowe", "1 Umiejętność", "2 Zaklęcia"],
+   "skills": [
+      {
+         "name": "Silna psychika",
+         "description": "<b>Dowolna faza:</b> Harvey zmniejsza wszystkie otrzymane straty Poczytalności o 1 (do minimum 0)."
+      }
+   ],
+   "sanity": 7,
+   "endurance": 3,
+   "speed": [0, 1, 2, 3],
+   "sneak": [5, 4, 3, 2],
+   "prowess": [0, 1, 2, 3],
+   "will": [3, 2, 1, 0],
+   "knowledge": [3, 4, 5, 6],
+   "luck": [4, 3, 2, 1],
+   "concentration": 2
+}

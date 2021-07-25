@@ -1,0 +1,28 @@
+{
+   "expansion": false,
+   "name": "Pete &#34Włóczęga&#34",
+   "profession": "Włóczęga",
+   "photo": "./img/characters/peteWloczega.jpeg",
+   "lore": [
+      "Kiedy żyje się na ulicy tak długo jak Pete, widzi się różne rzeczy. Rzeczy, które nawet najodważniejszych mężczyzn posłałyby w noc z krzykiem na ustach. Uczysz się być cichym, ukrywać się i jeśli wszystko zawiedzie, udawać głupiego. Dobrze jest mieć też wiernego psa, takiego jak Diuk. Odstrasza co gorszych typków.",
+      "Niestety, tym razem Pete nie może się ukryć, a Diuk nie będzie go w stanie ochronić. W przeciągu ostatniego miesiąca koszmary Pete'a stawały się coraz gorsze. Przygnały go aż tu... do Arkham. Teraz nawet whiskey już nie pomaga. Niedługo nie będzie już w stanie nawet na chwilę zmrużyć oka. Niemniej, zawsze znajdą się okazje dla faceta, który potrafi siedzieć cicho... i nie jest wybredny."
+   ],
+   "startingPosition": "Rzeczne doki",
+   "equipment": ["1$", "3 żetony Wskazówek", "1 Sprzymierzeniec (Diuk)"],
+   "randomEquipment": ["1 Przedmiot powszechny", "1 Przedmiot unikatowuy", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Śmieciarz",
+         "description": "Kiedy Pete losuje karty z talii <b>Przedmiotów powszechnych</b>, <b>Przedmiotów unikatowych</b> lub <b>Zaklęć</b>, może pociągnąć kartę z wierzchu albo ze spodu talii (wybór należy do niego). Pete może spojrzeć na spód każdej z tych talii w dowolnym momencie."
+      }
+   ],
+   "sanity": 4,
+   "endurance": 6,
+   "speed": [0, 1, 2, 3],
+   "sneak": [6, 5, 4, 3],
+   "prowess": [2, 3, 4, 5],
+   "will": [5, 4, 3, 2],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [3, 2, 1, 0],
+   "concentration": 1
+}

@@ -1,0 +1,30 @@
+{
+   "expansion": "dunwichHorror",
+   "name": "Mark Harrigan",
+   "profession": "Żołnierz",
+   "photo": "./img/characters/markHarrigan.jpeg",
+   "lore": [
+      "Większość ludzi uważa, że Markowi Harriganowi po prostu odbiło. Nie mogą go za to winić - wrócił z wojny, widział rzeczy, których nie powinien oglądać żaden człowiek. Wielu wraca z frontu ze złamanym ciałem i duchem. Ale Harrigan wrócił cały, o zdrowych zmysłach. Miał Sophie.",
+      "Sophie w niego wierzyła, wierzyła, że widział rzeczy, o których jej pisał - nie o ludziach zabijających się nawzajem, ale o innych istotach, o potworach. Wierzyła mu i to wystarczało, żeby nie oszalał w okopach. Wystarczyło, żeby przeżył.",
+      "Potem wrócił do domu i spotkał się z Sophie. Wreszcie poznał powód, dla którego mu wierzyła: jedna z tych istot żyła w niej, wyjadając ją od środka. Przerażony i bezradny obserwował jak rozpływa się w powietrzu, wrzeszcząc, gdy to coś kończyło swój posiłek.",
+      "Teraz wszyscy myślą, że Markowi Harriganowi odbiło. I może odbiło. Może wreszcie postradał rozum. Ale wie, że potwory są prawdziwe, że tu są, i że musi je powstrzymać. Kiedy klęka przed ołtarzem w Południowym Kościele, modli się o duszę Sophie i o przebaczenie za wiele, wiele grzechów, które ma zamiar popełnić w tym bezbożnym mieście."
+   ],
+   "startingPosition": "Południowy Kościół",
+   "equipment": ["4$", "3 żetony Wskazówek", "2 Przedmioty powszechne (Miotacz Ognia, Koktajl Mołotowa)"],
+   "randomEquipment": ["1 Przedmiot unikatowy", "1 Umiejętność"],
+   "skills": [
+      {
+         "name": "Jednoosobowa armia",
+         "description": "<b>Dowolna faza:</b> Nie możesz zostać aresztowany lub zatrzymany."
+      }
+   ],
+   "sanity": 3,
+   "endurance": 7,
+   "speed": [1, 2, 3, 4],
+   "sneak": [5, 4, 3, 2],
+   "prowess": [3, 4, 5, 6],
+   "will": [3, 2, 1, 0],
+   "knowledge": [0, 1, 2, 3],
+   "luck": [4, 3, 2, 1],
+   "concentration": 1
+}

@@ -21,3 +21,7 @@
 -  **v1.1.2 - _25-07-2021_**
 
    Sliders appearance fixed for Chrome.
+
+-  **v1.1.3 - _25-07-2021_**
+
+   Hyperlinks fixed for character.html.

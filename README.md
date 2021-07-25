@@ -17,3 +17,7 @@
 -  **v1.1.1 - _25-07-2021_**
 
    Minor bugfixes in phases.
+
+-  **v1.1.2 - _25-07-2021_**
+
+   Sliders appearance fixed for Chrome.

@@ -245,6 +245,7 @@ const updatePhase = (value) => {
       const phaseNumber = document.querySelector('section#phase>div.current>div.bigbox');
       const nextPhaseName = document.querySelector('section#phase>div.next>p');
       const nextPhaseNumber = document.querySelector('section#phase>div.next>div.box');
+      const sliders = document.querySelectorAll('input[type="range"]');
 
       if (currentPhase === 5) currentPhase = sendFirebaseData('phase', 0);
       else if (currentPhase === -1) sendFirebaseData('phase', 4);
@@ -254,11 +255,13 @@ const updatePhase = (value) => {
          phaseNumber.textContent = 'I';
          nextPhaseName.textContent = phases.second;
          nextPhaseNumber.textContent = 'II';
+         sliders.forEach((slider) => slider.removeAttribute('disabled'));
       } else if (currentPhase === 1) {
          phaseName.textContent = phases.second;
          phaseNumber.textContent = 'II';
          nextPhaseName.textContent = phases.third;
          nextPhaseNumber.textContent = 'III';
+         sliders.forEach((slider) => slider.setAttribute('disabled', 'disabled'));
       } else if (currentPhase === 2) {
          phaseName.textContent = phases.third;
          phaseNumber.textContent = 'III';
@@ -274,6 +277,7 @@ const updatePhase = (value) => {
          phaseNumber.textContent = 'V';
          nextPhaseName.textContent = phases.first;
          nextPhaseNumber.textContent = 'I';
+         sliders.forEach((slider) => slider.setAttribute('disabled', 'disabled'));
       }
    }, 500);
 };

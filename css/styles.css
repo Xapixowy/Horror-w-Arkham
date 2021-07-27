@@ -1,5 +1,6 @@
 :root {
    --lightGrey: #c4c4c4;
+   --grey: #737373;
    --darkGrey: #222222;
    --arkhamHorror: #fff;
    --dunwichHorror: #ffc800;
@@ -728,6 +729,11 @@ input[type='range']::-webkit-slider-thumb {
    cursor: pointer;
 }
 
+input[type='range']:disabled::-webkit-slider-thumb {
+   background-color: var(--darkGrey);
+   border: 2px outset var(--grey);
+}
+
 input[type='range']::-moz-range-thumb {
    appearance: none;
    box-sizing: content-box;
@@ -739,6 +745,10 @@ input[type='range']::-moz-range-thumb {
    border-radius: 0;
    cursor: pointer;
 }
+
+input[type='range']:disabled::-moz-range-thumb {
+   background-color: var(--darkGrey);
+   border: 2px outset var(--grey);
 
 div.plus > span:nth-of-type(2) {
    transform: translateY(-50%) rotate(90deg);

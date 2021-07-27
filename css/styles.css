@@ -712,6 +712,10 @@ input[type='range'] {
    background-color: var(--lightGrey);
 }
 
+input[type='range']:disabled {
+   background-color: rgba(255,0,0,.25);
+}
+
 input[type='range']:focus {
    outline: none;
 }
@@ -731,7 +735,7 @@ input[type='range']::-webkit-slider-thumb {
 
 input[type='range']:disabled::-webkit-slider-thumb {
    background-color: var(--darkGrey);
-   border: 2px outset var(--grey);
+   border: 2px outset var(--lightGrey);
 }
 
 input[type='range']::-moz-range-thumb {
@@ -748,7 +752,7 @@ input[type='range']::-moz-range-thumb {
 
 input[type='range']:disabled::-moz-range-thumb {
    background-color: var(--darkGrey);
-   border: 2px outset var(--grey);
+   border: 2px outset var(--lightGrey);
 
 div.plus > span:nth-of-type(2) {
    transform: translateY(-50%) rotate(90deg);

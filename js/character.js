@@ -25,7 +25,7 @@ const fillCharacter = (character) => {
    const luck = document.querySelector('main#player div.luck');
    const concentration = document.querySelector('main#player p.concentration>span');
 
-   document.title = `${character.name} - character`;
+   document.title = `${character.name} - Horror w Arkham`;
    character.lore.forEach((text) => {
       const paragraph = document.createElement('p');
       paragraph.innerHTML = text;

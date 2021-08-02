@@ -1,4 +1,4 @@
-const version = '1.1.4';
+const version = '1.1.5';
 
 const navButton = document.querySelector('button#navClick');
 

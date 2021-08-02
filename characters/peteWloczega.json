@@ -1,6 +1,6 @@
 {
    "expansion": false,
-   "name": "Pete &#34Włóczęga&#34",
+   "name": "Pete \"Włóczęga\"",
    "profession": "Włóczęga",
    "photo": "./img/characters/peteWloczega.jpeg",
    "lore": [
@@ -9,7 +9,7 @@
    ],
    "startingPosition": "Rzeczne doki",
    "equipment": ["1$", "3 żetony Wskazówek", "1 Sprzymierzeniec (Diuk)"],
-   "randomEquipment": ["1 Przedmiot powszechny", "1 Przedmiot unikatowuy", "1 Umiejętność"],
+   "randomEquipment": ["1 Przedmiot powszechny", "1 Przedmiot unikatowy", "1 Umiejętność"],
    "skills": [
       {
          "name": "Śmieciarz",

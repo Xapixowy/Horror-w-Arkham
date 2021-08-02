@@ -4,7 +4,7 @@
    "profession": "Piosenkarka",
    "photo": "./img/characters/marieLambeau.jpeg",
    "lore": [
-      "Marie Lambeau zawsze posiada głos, za który warto by oddać życie. Nazywali ją &#34Mglistym Aksamitem.&#34 Mówili, że urodziła się tylko po to, aby śpiewać jazz, że posiada to magiczne &#34coś&#34 - i może mieli rację.",
+      "Marie Lambeau zawsze posiada głos, za który warto by oddać życie. Nazywali ją \"Mglistym Aksamitem.\" Mówili, że urodziła się tylko po to, aby śpiewać jazz, że posiada to magiczne \"coś\" - i może mieli rację.",
       "Pewnego razu Marie usłyszała o mężczyźnie, który potrafił zmusić umarłych do tańca brzmieniem swojej trąbki. Ona nigdy tego nie potrafiła - jej zaklęty głoś nie działał w ten sposób. Ale podoba im się, gdy go słyszą, i ona im się podoba, a to jej w zupełności wystarcza.",
       "Niedawno zmarła <i>grande-mère</i> Marie. Czemu starsza pani przeporawdziła się z Nowego Orleanu do Arkham, tego Marie nie wiedziała. Nigdy nie poświęcała zbyt wiele uwagi opowieściom, które ludzie snuli o jej babce. Uważała, że są po prostu zazdrośni. Dziś jednak Marie siedzi w Pensjonacie Mamuśki, trzymając nóż babki, i słyszy, jak ostrze śpiewa mglistym, aksamitnym głosem..."
    ],
@@ -18,7 +18,7 @@
       },
       {
          "name": "Trzecie oko",
-         "description": "<b>Dowolna faza:</b> Marie posiada &#34trzecią dłoń&#34. Może jej używać jedynie do rzucania Zaklęć."
+         "description": "<b>Dowolna faza:</b> Marie posiada \"trzecią dłoń\". Może jej używać jedynie do rzucania Zaklęć."
       }
    ],
    "sanity": 6,

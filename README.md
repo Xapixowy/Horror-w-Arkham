@@ -6,6 +6,10 @@
 
 ## Changelog:
 
+-  **v1.1.5 - _02-08-2021_**
+
+   Changed plus and minus buttons on character page to Tabler Icons. Fixed animations which didn't work. Fixed website title for Pete "Włóczęga".
+
 -  **v1.1.4 - _27-07-2021_**
 
    Sliders will be enabled only on first phase.

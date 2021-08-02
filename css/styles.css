@@ -132,9 +132,9 @@ button#randomCharacter {
    background-color: var(--dunwichHorror);
 }
 
-button#randomCharacter i {
+button#randomCharacter > i {
    transform-origin: center top;
-   animation: slideDown 1.5s ease-in-out infinite both;
+   animation: slideDown 1.5s ease-in-out infinite;
 }
 
 button#loreClick {
@@ -640,17 +640,19 @@ div.stats {
    width: 100%;
    height: 50px;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    margin-bottom: 30px;
 }
 
 div.stats > div {
    width: 50px;
    height: 50px;
+   margin: 0;
    background-color: #c4c4c4;
    display: flex;
    justify-content: center;
    align-items: center;
+   justify-content: center;
    font-size: 40px;
    font-weight: 700;
 }
@@ -663,22 +665,8 @@ div.stats:nth-of-type(2) > div {
    color: var(--darkred);
 }
 
-div.stats > div.minus,
-div.stats > div.plus {
-   position: relative;
-   background-color: transparent;
-   cursor: pointer;
-}
-
-div.minus > span,
-div.plus > span {
-   position: absolute;
-   top: 50%;
-   left: 0;
-   display: block;
-   width: 100%;
-   border-bottom: 2px solid #fff;
-   transform: translateY(-50%);
+div.stats > i {
+   font-size: 50px;
 }
 
 div.slider {
@@ -713,7 +701,7 @@ input[type='range'] {
 }
 
 input[type='range']:disabled {
-   background-color: rgba(255,0,0,.25);
+   background-color: rgba(255, 0, 0, 0.25);
 }
 
 input[type='range']:focus {
@@ -753,9 +741,6 @@ input[type='range']::-moz-range-thumb {
 input[type='range']:disabled::-moz-range-thumb {
    background-color: var(--darkGrey);
    border: 2px outset var(--lightGrey);
-
-div.plus > span:nth-of-type(2) {
-   transform: translateY(-50%) rotate(90deg);
 }
 
 @keyframes wiggle {

@@ -117,8 +117,8 @@ function loreToggle() {
 
 loreButton.addEventListener('click', loreToggle);
 
-const sanityMinus = document.querySelector('div.sanity>div.minus');
-const sanityPlus = document.querySelector('div.sanity>div.plus');
+const sanityMinus = document.querySelector('div.sanity>i.ti-minus');
+const sanityPlus = document.querySelector('div.sanity>i.ti-plus');
 const sanityValue = document.querySelector('div.sanity>div.value');
 
 function sanityValueMinus() {
@@ -153,8 +153,8 @@ function sanityValuePlus() {
 }
 sanityPlus.addEventListener('click', sanityValuePlus);
 
-const enduranceMinus = document.querySelector('div.endurance>div.minus');
-const endurancePlus = document.querySelector('div.endurance>div.plus');
+const enduranceMinus = document.querySelector('div.endurance>i.ti-minus');
+const endurancePlus = document.querySelector('div.endurance>i.ti-plus');
 const enduranceValue = document.querySelector('div.endurance>div.value');
 
 function enduranceValueMinus() {

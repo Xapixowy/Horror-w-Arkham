@@ -13,7 +13,7 @@
    "skills": [
       {
          "name": "Prekognicja",
-         "description": "<b>Mity:</b> Raz na turę, kiedy zostanie wylosowana karta Mitów inna niż &#34Historia toczy się dalej...&#34 Jacqueline może wydać 2 żetony Wskazówek, aby odrzucić tę kartę bez rozpatrywania jej efektu i w jej miejsce wylosować nową kartę. Następnie druga karta Mitów wywiera swój efekt."
+         "description": "<b>Mity:</b> Raz na turę, kiedy zostanie wylosowana karta Mitów inna niż \"Historia toczy się dalej...\" Jacqueline może wydać 2 żetony Wskazówek, aby odrzucić tę kartę bez rozpatrywania jej efektu i w jej miejsce wylosować nową kartę. Następnie druga karta Mitów wywiera swój efekt."
       }
    ],
    "sanity": 7,

@@ -13,7 +13,7 @@
    "skills": [
       {
          "name": "Magiczny talent",
-         "description": "<b>Dowolna faza:</b> Za każdym razem, kiedy &#34Wielki&#34 Drake losuje jedną lub więcej kart z talii <b>Zaklęć</b>, dobiera o jedną kartę więcej, a następnie odrzuca jedną z nich."
+         "description": "<b>Dowolna faza:</b> Za każdym razem, kiedy \"Wielki\" Drake losuje jedną lub więcej kart z talii <b>Zaklęć</b>, dobiera o jedną kartę więcej, a następnie odrzuca jedną z nich."
       }
    ],
    "sanity": 5,

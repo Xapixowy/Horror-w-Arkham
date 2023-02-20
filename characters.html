@@ -11,7 +11,6 @@
          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
          crossorigin="anonymous"
       />
-      <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css" />
       <link
          href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=latin-ext"
          rel="stylesheet"
@@ -20,15 +19,77 @@
    </head>
 
    <body>
+      <div id="disclaimer">
+         <div class="backdrop"></div>
+         <div class="prompt">
+            <div class="icon">
+               <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-device-mobile"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+               >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M6 3m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" />
+                  <path d="M11 4l2 0" />
+                  <path d="M12 17l0 .01" />
+               </svg>
+            </div>
+            <div class="text">
+               <p>Aplikacja przeznaczona jest na urządzenia mobilne!</p>
+               <p>Wyświetlanie jej na urządzeniach stacjonarnych może być utrudnione.</p>
+            </div>
+         </div>
+      </div>
       <div id="preloader">
-         <i class="ti ti-loader-quarter"></i>
+         <div class="ti">
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="icon icon-tabler icon-tabler-loader-quarter"
+               viewBox="0 0 24 24"
+               stroke-width="2"
+               stroke="currentColor"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            >
+               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+               <path d="M12 6l0 -3" />
+               <path d="M6 12l-3 0" />
+               <path d="M7.75 7.75l-2.15 -2.15" />
+            </svg>
+         </div>
       </div>
       <button id="navClick">
          <div class="burger"></div>
          <div class="burger"></div>
          <div class="burger"></div>
       </button>
-      <button id="randomCharacter"><i class="ti ti-dice"></i></button>
+      <button id="randomCharacter">
+         <div class="ti">
+            <svg
+               xmlns="http://www.w3.org/2000/svg"
+               class="icon icon-tabler icon-tabler-dice"
+               viewBox="0 0 24 24"
+               stroke-width="2"
+               stroke="currentColor"
+               fill="none"
+               stroke-linecap="round"
+               stroke-linejoin="round"
+            >
+               <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+               <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+               <circle cx="8.5" cy="8.5" r=".5" fill="currentColor" />
+               <circle cx="15.5" cy="8.5" r=".5" fill="currentColor" />
+               <circle cx="15.5" cy="15.5" r=".5" fill="currentColor" />
+               <circle cx="8.5" cy="15.5" r=".5" fill="currentColor" />
+            </svg>
+         </div>
+      </button>
       <nav>
          <span id="version"></span>
          <ul>

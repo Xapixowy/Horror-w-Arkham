@@ -23,6 +23,48 @@ body {
    color: #fff;
 }
 
+div#disclaimer {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   z-index: 5;
+}
+
+div#disclaimer div.backdrop {
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.85);
+}
+
+div#disclaimer div.prompt {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: var(--darkGrey);
+   padding: 25px;
+   border: 1px solid var(--lightGrey);
+   border-radius: 15px;
+   display: flex;
+   gap: 20px;
+   align-items: center;
+}
+
+div#disclaimer div.prompt > div.icon {
+   width: 70px;
+}
+
+div#disclaimer div.prompt > div.text > p {
+   text-align: center;
+   margin: 10px 0;
+}
+
+div#disclaimer div.prompt > div.text > p:first-child {
+   font-weight: bold;
+}
+
 div#preloader {
    position: fixed;
    top: 0;
@@ -36,9 +78,10 @@ div#preloader {
    justify-content: center;
 }
 
-div#preloader i {
-   display: block;
-   font-size: 80px;
+div#preloader div.ti {
+   width: 80px;
+   height: 80px;
+   font-size: 0;
    animation: rotate 0.8s linear infinite both;
 }
 
@@ -62,10 +105,15 @@ button {
    transition: 0.5s;
    background-color: #c4c4c4;
    font-size: 36px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-button > i {
-   display: inline-block;
+button > div.ti {
+   width: 80%;
+   height: 80%;
+   font-size: 0;
    transition: 0.5s;
 }
 
@@ -132,8 +180,7 @@ button#randomCharacter {
    background-color: var(--dunwichHorror);
 }
 
-button#randomCharacter > i {
-   transform-origin: center top;
+button#randomCharacter > div.ti {
    animation: slideDown 1.5s ease-in-out infinite;
 }
 
@@ -143,7 +190,7 @@ button#loreClick {
    z-index: 3;
 }
 
-button#loreClick i {
+button#loreClick div.ti {
    transition: transform 0.5s;
 }
 
@@ -151,7 +198,7 @@ button#loreClick.clicked {
    background-color: #808080;
 }
 
-button#loreClick.clicked > i {
+button#loreClick.clicked > div.ti {
    transform: rotate(180deg);
 }
 
@@ -182,7 +229,7 @@ button#resetPhase {
 }
 
 button:is(#previousPhase.shown, #nextPhase.shown, #resetPhase.shown) {
-   display: block;
+   display: flex;
 }
 
 nav {
@@ -436,7 +483,14 @@ main a {
 }
 
 main a.download {
+   display: flex;
+   justify-content: center;
+   height: 1.25em;
    font-size: 1.25em;
+}
+
+main a.download > svg {
+   margin-right: 5px;
 }
 
 main hr {
@@ -813,5 +867,11 @@ input[type='range']:disabled::-moz-range-thumb {
 
    div#workInProgress > i {
       font-size: 30vh;
+   }
+}
+
+@media (max-width: 576px) and (orientation: portrait) {
+   div#disclaimer {
+      display: none;
    }
 }

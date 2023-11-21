@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+    db:
+        image: mariadb
+        restart: always
+        ports:
+            - 3306:3306
+        volumes:
+            - ./docker_containers/mysql:/var/lib/mysql
+        environment:
+            MARIADB_DATABASE: ${DB_NAME}
+            MARIADB_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+            MARIADB_USER: ${DB_USER_NAME}
+            MARIADB_PASSWORD: ${DB_USER_PASSWORD}

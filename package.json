@@ -1,0 +1,23 @@
+{
+  "name": "horrow-w-arkham-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xapixowy/Horror-w-Arkham.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xapixowy/Horror-w-Arkham/issues"
+  },
+  "homepage": "https://github.com/Xapixowy/Horror-w-Arkham#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "typescript": "^5.2.2"
+  }
+}
